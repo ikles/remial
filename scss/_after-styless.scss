@@ -1,0 +1,32 @@
+@media (max-width : 1679px) {
+  .wrapper {
+    zoom: 0.8;
+  }
+}
+
+.eye-3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #ccc;
+  z-index: 100;   
+  -webkit-border-radius: 50%; 
+  border-radius: 50%;
+}
+
+
+
+@media (max-width: 640px) {
+  .help-call .measurer-form .btn {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  body, body > * {
+    width: auto;
+    min-width: 320px;
+  }
+}
