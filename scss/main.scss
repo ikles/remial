@@ -473,6 +473,9 @@ h2,
 
 .section {
   padding: 65px 0;
+  &:empty {
+    padding: 0;
+  }
 }
 
 .advants__w {
@@ -1184,6 +1187,67 @@ h2,
   color: rgb(43, 48, 55);
   margin-bottom: 30px;
 }
+
+
+.s-smap {
+  height: 485px;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  margin-top: 65px;
+}
+
+.smap__wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.smap__inn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.smap-contacts {
+  border-radius: 24px 24px 120px;
+  width: 390px;
+  min-height: 259px;
+  margin-right: 198px;
+  background: rgb(255, 255, 255);
+  padding: 28px 28px 28px 30px;
+}
+
+.smap-contacts__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.fc__info {
+  margin-bottom: 31px;
+p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0px;
+}
+}
+
+
+.fc__info-tel {
+  font-size: 18px;
+  line-height: 1.2;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+
 
 //2000
 
