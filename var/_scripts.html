@@ -1,9 +1,58 @@
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
+<script src="js/slick.js"></script>
+<script async src="js/placemark.js"></script>  
+<script src="js/nouislider.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
 <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
-  <script async src="js/placemark.js"></script>  
-  <script src="js/nouislider.js"></script>
-  <script src="js/wNumb.min.js"></script>
-  <script src="js/select2.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/common.js"></script>
+
+
+  <div class="modal-overlay modal-overlay_1">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block">     
+      <span class="modal-close modal-close_1"></span>
+      <div class="modal-form__inner">
+        <div class="h3 center">Запись на приём</div>
+        <form>
+          <input type="text" placeholder="Ваше имя" />
+          <input class="tel" type="text" placeholder="+7(___)___-__-__" />
+          <textarea placeholder="Ваш комментарий"></textarea>
+          <input type="submit" value="Записаться на приём" />          
+        </form>
+        <p class="modal-accept">Нажимая на кнопку “Записаться на приём” , Вы подтверждаете, что ознакомлены с <a href="">Политикой конфиденциальности</a></p>
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+  <div class="modal-overlay modal-overlay_2">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block">     
+      <span class="modal-close modal-close_2"></span>
+      <div class="modal-form__inner">
+        <div class="h3 center">Вызвать нарколога на дом</div>
+        <form>
+          <input type="text" placeholder="Ваше имя" />
+          <input class="tel" type="text" placeholder="+7(___)___-__-__" />
+          <textarea placeholder="Ваш комментарий"></textarea>
+          <input type="submit" value="Вызвать нарколога" />          
+        </form>
+        <p class="modal-accept">Нажимая на кнопку “Записаться на приём” , Вы подтверждаете, что ознакомлены с <a href="">Политикой конфиденциальности</a></p>
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+
+  <div class="modal-overlay modal-overlay_3">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block">     
+      <span class="modal-close modal-close_3"></span>
+      <div class="modal-form__inner">
+        <div class="h3 center">Блогадарим за запись!
+          Мы свяжемся с Вами
+         в ближайшее время</div>        
+        <a href="" class="thanks-modal__btn btn">Вернуться на главную</a>
+      </div>
+    </div>
+</div><!--modal-overlay-->
