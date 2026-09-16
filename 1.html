@@ -19,18 +19,31 @@
   <div class="wrapper">
     @@include('var/_header.html')    
     <main class="main">
-
       <section class="vid">
         <div class="lcpadding">
           <div class="vid__w">
             <div class="vid__l">
               <h1>Наркологическая клиника “Ремиаль” в Москве</h1>
               <p class="vid__txt">С&nbsp;поддержкой и&nbsp;заботой поможем обрести свободу от&nbsp;зависимости</p>
-              <ul class="vid__ul">
-                <li>Анонимное лечение</li>
-                <li>Круглосуточная помощь 24/ 7</li>
-                <li>Выезжаем на дом по Москве и Московской области</li>
-              </ul>
+              <div class="vid__ul">
+                <ul>
+                  <li>Анонимное лечение</li>
+                  <li>Круглосуточная помощь 24/ 7</li>
+                  <li>Выезжаем на дом по Москве и Московской области</li>
+                </ul>
+              </div>
+              <div class="vid__prices">
+                <div class="vid-go">
+                  <p>Первый выезд нарколога:</p>
+                  <span>от 1990 ₽</span>
+                </div>
+                <div class="vid-price">
+                  <div>
+                    <span>Консультация в клинике</span>
+                    <p>Бесплатная</p>
+                  </div>
+                </div>
+              </div>
               <div class="vid__btn-w">
                 <a href="" class="btn vid__btn-call">Вызвать нарколога на дом</a>
                 <a href="" class="btn-o vid__btn-order">Заказать звонок</a>
@@ -45,223 +58,37 @@
           </div>
         </div>
       </section>
-      <section class="s-advants section">
-        <div class="contain">
-          <div class="advants__w">
-            <div class="advants__item item__1">
-              <div class="items__img"><img src="img/ic-it-1.svg"></div>
-              <p>Мы лечим не только зависимость, а человека целиком</p>
-            </div>
-            <div class="advants__item item__2">
-              <div class="items__img"><img src="img/ic-it-2.svg"></div>
-              <p>Врачи-эксперты с опытом более 15 лет</p>
-            </div>
-            <div class="advants__item item__3">
-              <div class="items__img"><img src="img/ic-it-3.svg"></div>
-              <p>Реаниматологи в составе команды</p>
-            </div>
-            <div class="advants__item item__4">
-              <div class="items__img"><img src="img/ic-it-4.svg"></div>
-              <p>Лицензированная клиника
-              </p>
-            </div>
-          </div>
-        </div>        
-      </section>
-
-
-
+      
+      @@include('var/_s-advants.html')
 
       <section class="section s-serv">        
         <div class="contain">
           <h2>Услуги наркологии</h2>
-          <div class="serv__w">
-            <div class="serv__item">
-              <img src="./img/serv-1.jpg" alt="">
-              <div class="serv__name">Выезд нарколога на дом по Москве и области</div>
-              <div class="serv__price">от 3000 ₽</div>
-            </div>
-            <div class="serv__item">
-              <img src="./img/serv-2.jpg" alt="">
-              <div class="serv__name">Консультация нарколога-психиатра</div>
-              <div class="serv__price">от 3000 ₽</div>
-            </div>
-            <div class="serv__item">                
-              <img src="./img/serv-3.jpg" alt="">
-              <div class="serv__name">Кодирование от алкоголизма</div>
-              <div class="serv__price">от 3000 ₽</div>
-            </div>
-            <div class="serv__item">
-              <img src="./img/serv-4.jpg" alt="">
-              <div class="serv__name">Вывод из запоя</div>
-              <div class="serv__price">от 3000 ₽</div>
-            </div>
-            <div class="serv__item">
-              <img src="./img/serv-5.jpg" alt="">
-              <div class="serv__name">Капельницы от запоя и похмелья</div>
-              <div class="serv__price">от 3000 ₽</div>
-            </div>
-            <div class="serv__item">
-              <img src="./img/serv-6.jpg" alt="">
-              <div class="serv__name">Лечение алкоголизма</div>
-              <div class="serv__price">от 3000 ₽</div>
-            </div>
-            <div class="serv__item">
-              <img src="./img/serv-7.jpg" alt="">
-              <div class="serv__name">Лечение никотиновой зависимости</div>
-              <div class="serv__price">от 3000 ₽</div>
-            </div>
-            <div class="serv__item">
-              <img src="./img/serv-8.jpg" alt="">
-              <div class="serv__name">Лечение наркомании</div>
-              <div class="serv__price">от 3000 ₽</div>
-            </div>
-          </div>
+          @@include('var/_serv__w.html')
         </div>
       </section>
-      <section class="section s-mabout">
-        <div class="contain">
-          <div class="mabout__w">
-            <div class="mabout__img"><img src="img/rem-photo.jpg" class="mabout__img-img"></div>
-            <div class="mabout__cont">
-              <h2>Наркологическая клиника “Ремиаль”</h2>
-              
-              <div class="open-element2">
-                <div class="mabout__txt">
-                  <p>Обращение за наркологической помощью — это шаг, который человек делает в сложный период своей жизни. Мы делаем все,
-                  чтобы этот шаг был максимально безопасным и комфортным. В частном наркологическом центре «Ремиаль» в Москве помощь
-                  доступна круглосуточно. Врачи-психиатры-наркологи работают в стационаре, принимают в клинике и выезжают на дом.
-                  Здесь лечат алкогольную и наркотическую зависимость, проводят детоксикацию и кодирование, выводят из запоя и снимают
-                  абстиненцию. Решение о методах помощи врач принимает только после осмотра. Клиника имеет лицензию на медицинскую
-                  деятельность, информация о пациентах защищена врачебной тайной.</p>
-                  <div class="hide-content">
-                    <p>Обращение за наркологической помощью — это шаг, который человек делает в сложный период своей жизни. Мы делаем все,
-                      чтобы этот шаг был максимально безопасным и комфортным. В частном наркологическом центре «Ремиаль» в Москве помощь
-                      доступна круглосуточно. Врачи-психиатры-наркологи работают в стационаре, принимают в клинике и выезжают на дом.
-                      Здесь лечат алкогольную и наркотическую зависимость, проводят детоксикацию и кодирование, выводят из запоя и снимают
-                      абстиненцию. Решение о методах помощи врач принимает только после осмотра. Клиника имеет лицензию на медицинскую
-                    деятельность, информация о пациентах защищена врачебной тайной.</p>
-                  </div>
-                </div>                
-                <button data-swap="Скрыть" data-text="Подробнее" class="mabout__more toggle">Подробнее</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      @@include('var/_s-mabout.html')
       <section class="section s-why">
         <div class="contain">
           <h2>Почему выбирают наркологическую клинику «Ремиаль»</h2>
-          <div class="why__row">
-            @@include('var/_why__item.html',{
-              "img":"img/why-1.svg",
-              "title":"Команда экспертов высокого уровня",
-              "text":"Доктора медицинских наук, кандидаты медицинских наук и опытные врачи различных специальностей - вместе мы принимаем эффективные клинические решения даже в сложных случаях."
-            })
-            @@include('var/_why__item.html',{
-              "img":"img/why-2.svg",
-              "title":"Полная конфиденциальность и уважение к пациенту",
-              "text":"Мы создаем безопасное пространство без осуждения и стигмы, человек получает помощь анонимно и с максимальным уважением к его личной истории."
-            })
-            @@include('var/_why__item.html',{
-              "img":"img/why-3.svg",
-              "title":"Мы работаем круглосуточно 24/7",
-              "text":"Наша клиника работает круглосуточно без праздников и выходных - вы сможете получить квалифицированную наркологическую помощь в любой момент"
-            })
-            @@include('var/_why__item.html',{
-              "img":"img/why-4.svg",
-              "title":"Выезд врача-нарколога на дом по Москве и Московской области",
-              "text":"У нас 11 выездных бригад, которые ежедневно в любое время суток выезжают к пациентам для оказания помощи."
-            })
-            @@include('var/_why__item.html',{
-              "img":"img/why-5.svg",
-              "title":"Комфортный стационар",
-              "text":"У нас современный стационар с уютными палатами, заботливым персоналом и всем необходимым для восстановления."
-            })
-            @@include('var/_why__item.html',{
-              "img":"img/why-6.svg",
-              "title":"Реаниматологи в составе команды",
-              "text":"При тяжелых состояниях и осложнениях помощь оказывается специалистами, имеющими опыт работы в интенсивной терапии и критических состояниях."
-            })
-            @@include('var/_why__item.html',{
-              "img":"img/why-7.svg",
-              "title":"Экспертная медицина полного цикла",
-              "text":"В команде работают психиатр,   нарколог, невролог, терапевт, реаниматолог. Мы лечим не только зависимость, а человека целиком."
-            })
-            @@include('var/_why__item.html',{
-              "img":"img/why-8.svg",
-              "title":"Лицензированная медицинская помощь",
-              "text":"Мы работаем на основании медицинской лицензии и строго соблюдаем требования законодательства и стандарты оказания медицинской помощи."
-            })
-          </div>
+          @@include('var/_why__row.html')
         </div>
       </section>
       <section class="section s-gal">
         <div class="contain">
           <h2>Фотографии клиники</h2>
         </div>
-        <div class="gal__wrap">
-          <div class="gal-sl">
-            <a href="./img/gal1.jpg" data-fancybox="gal-m1" class="gal-sl__slide"><img src="./img/gal1.jpg" alt=""></a>
-            <a href="./img/gal2.jpg" data-fancybox="gal-m1" class="gal-sl__slide"><img src="./img/gal2.jpg" alt=""></a>
-            <a href="./img/gal3.jpg" data-fancybox="gal-m1" class="gal-sl__slide"><img src="./img/gal3.jpg" alt=""></a>
-            <a href="./img/gal2.jpg" data-fancybox="gal-m1" class="gal-sl__slide"><img src="./img/gal2.jpg" alt=""></a>
-          </div>
-        </div>
+        @@include('var/_gal__wrap.html')
       </section>
       <section class="section s-sform">
         <div class="contain">
-          <div class="s-sform__bg">
-            <div class="s-sform__content">
-              <div class="s-sform__title">Вам или вашему близкому плохо? Мы приедем в течение 30 минут </div>
-              <div class="s-sform__geo">По Москве и области</div>
-            </div>
-            <div class="s-sform__form-w">
-              <div class="sform__info">
-                <p>Круглосуточно. Анонимно</p>
-                <a href="tel:" class="sform__info-tel">8 (495) 540-57-86</a>
-              </div>
-              <form class="sform__form">
-                <input class="sform__input" type="text" placeholder="+7(___)___-__-__">
-                <input type="submit" value="Вызвать нарколога">
-              </form>
-            </div>
-            <div class="s-sform__img">
-              <img src="img/form-human.png" class="s-sform__img-img">
-            </div>
-          </div>
+          @@include('var/_s-sform__bg.html')        
         </div>
-
       </section>
       <section class="section s-doctors">
         <div class="contain">
           <h2>Врачи клиники</h2>
-          <div class="doctors__sl doctors__row">
-            @@include('var/_doctors__item.html',{
-              "img":"./img/doc-1.png",
-              "op":"Опыт 35 лет",
-              "name":"Киселев Тимофей Викторович",
-              "dol":"Заместитель главного врача по реабилитационной работе."
-            })
-            @@include('var/_doctors__item.html',{
-              "img":"./img/doc-2.png",
-              "op":"Опыт 35 лет",
-              "name":"Киселев Тимофей Викторович",
-              "dol":"Заместитель главного врача по реабилитационной работе."
-            })
-            @@include('var/_doctors__item.html',{
-              "img":"./img/doc-3.png",
-              "op":"Опыт 35 лет",
-              "name":"Киселев Тимофей Викторович",
-              "dol":"Заместитель главного врача по реабилитационной работе."
-            })
-            @@include('var/_doctors__item.html',{
-              "img":"./img/doc-2.png",
-              "op":"Опыт 35 лет",
-              "name":"Киселев Тимофей Викторович",
-              "dol":"Заместитель главного врача по реабилитационной работе."
-            })
-          </div>
+          @@include('var/_doctors__sl.html')
         </div>
       </section>
       <section class="section s-how">
@@ -325,118 +152,19 @@
       <section class="section s-promo">
         <div class="contain">
           <h2>Акции</h2>
-          <div class="promo__row">
-            <div class="promo__item">
-              <div class="promo-item__img"><img src="img/promo-1.png"></div>
-              <div class="promo-item__link">Скидка 20% участникам СВО, родственникам и военным пенсионерам СВО</div>
-              <div
-              class="promo-item__date">Акция до: 31 августа 2026</div>
-              <a href="" class="btn">Записаться</a>
-            </div>
-            <div class="promo__item">
-              <div class="promo-item__img"><img src="img/promo-2.png"></div>
-              <div class="promo-item__link">Дарим скидку 15% на детокс-капельницу вам, вашим близким и друзьям!</div>
-              <div
-              class="promo-item__date">Акция до: 31 августа 2026</div>
-              <a href="" class="btn">Записаться</a>
-            </div>
-          </div>
+          @@include('var/_promo__row.html')
         </div>
       </section>
       <section class="section s-reviews">
         <div class="contain">
           <h2>Отзывы пациентов</h2>
         </div>
-        <div class="rev-sl__wrap">                      
-          <div class="rev-sl__inn">                      
-            <div class="rev-sl">              
-              <div class="rev-sl__slide">
-                <div class="rev-sl__top">
-                  <div class="rev-sl__name">Мария С.</div>
-                  <div class="rev-sl__date">27 июля 2026</div>
-                </div>
-                <div class="rev-sl__text hide-content">
-                  <p>Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с невероятным энтузиазмом и профессионализмом.
-                    Моя сестра долгие годы страдала от алкогольной зависимости, и когда мы обратились в «Ремиаль», нашей семье открыли
-                    двери к новой надежде. Врачи провели детальное обследование и разработали персонализированный план лечения. Поддержка,
-                  которую мы Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с</p>
-                  <p>Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с невероятным энтузиазмом и профессионализмом.
-                    Моя сестра долгие годы страдала от алкогольной зависимости, и когда мы обратились в «Ремиаль», нашей семье открыли
-                    двери к новой надежде. Врачи провели детальное обследование и разработали персонализированный план лечения. Поддержка,
-                  которую мы Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают</p>
-                </div>
-                <div class="rev-sl__bot">                  
-                  <button data-swap="Скрыть" data-text="Читать весь отзыв" class="toggle rev-sl__more">Читать весь отзыв</button>
-                  <div class="rev-sl__about">О враче: <span class="rev-sl__doctor">Киселев Тимофей Викторович</span></div>
-                </div>
-              </div>
-
-
-              <div class="rev-sl__slide">
-                <div class="rev-sl__top">
-                  <div class="rev-sl__name">Мария С.</div>
-                  <div class="rev-sl__date">27 июля 2026</div>
-                </div>
-                <div class="rev-sl__audio-wrap"></div>
-                <div class="rev-sl__bot">                  
-                  <div class="rev-sl__about">О враче: <span class="rev-sl__doctor">Киселев Тимофей Викторович</span></div>
-                </div>
-              </div>
-
-              <div class="rev-sl__slide">
-                <div class="rev-sl__top">
-                  <div class="rev-sl__name">Мария С.</div>
-                  <div class="rev-sl__date">27 июля 2026</div>
-                </div>
-                <div class="rev-sl__text hide-content">
-                  <p>Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с невероятным энтузиазмом и профессионализмом.
-                    Моя сестра долгие годы страдала от алкогольной зависимости, и когда мы обратились в «Ремиаль», нашей семье открыли
-                    двери к новой надежде. Врачи провели детальное обследование и разработали персонализированный план лечения. Поддержка,
-                  которую мы Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с</p>
-                  <p>Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с невероятным энтузиазмом и профессионализмом.
-                    Моя сестра долгие годы страдала от алкогольной зависимости, и когда мы обратились в «Ремиаль», нашей семье открыли
-                    двери к новой надежде. Врачи провели детальное обследование и разработали персонализированный план лечения. Поддержка,
-                  которую мы Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают</p>
-                </div>
-                <div class="rev-sl__bot">                  
-                  <button data-swap="Скрыть" data-text="Читать весь отзыв" class="toggle rev-sl__more">Читать весь отзыв</button>
-                  <div class="rev-sl__about">О враче: <span class="rev-sl__doctor">Киселев Тимофей Викторович</span></div>
-                </div>
-              </div>
-
-              <div class="rev-sl__slide">
-                <div class="rev-sl__top">
-                  <div class="rev-sl__name">Мария С.</div>
-                  <div class="rev-sl__date">27 июля 2026</div>
-                </div>
-                <div class="rev-sl__text hide-content">
-                  <p>Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с невероятным энтузиазмом и профессионализмом.
-                    Моя сестра долгие годы страдала от алкогольной зависимости, и когда мы обратились в «Ремиаль», нашей семье открыли
-                    двери к новой надежде. Врачи провели детальное обследование и разработали персонализированный план лечения. Поддержка,
-                  которую мы Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с</p>
-                  <p>Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают с невероятным энтузиазмом и профессионализмом.
-                    Моя сестра долгие годы страдала от алкогольной зависимости, и когда мы обратились в «Ремиаль», нашей семье открыли
-                    двери к новой надежде. Врачи провели детальное обследование и разработали персонализированный план лечения. Поддержка,
-                  которую мы Клиника «Ремиаль» — это исключительное место, где врачи и психологи работают</p>
-                </div>
-                <div class="rev-sl__bot">                  
-                  <button data-swap="Скрыть" data-text="Читать весь отзыв" class="toggle rev-sl__more">Читать весь отзыв</button>
-                  <div class="rev-sl__about">О враче: <span class="rev-sl__doctor">Киселев Тимофей Викторович</span></div>
-                </div>
-              </div>
-
-            </div>          
-          </div>          
-        </div>        
+        @@include('var/_rev-sl__wrap.html')      
       </section>
       <section class="section s-lic">
         <div class="contain">
           <h2 class="center">Лицензии</h2>
-          <div class="lic-sl">
-            <a data-fancybox="gallery" href="img/lic1.jpg" class="lic-sl__slide"><img src="img/lic1.jpg"></a>
-            <a data-fancybox="gallery" href="img/lic2.jpg" class="lic-sl__slide"><img src="img/lic2.jpg"></a>
-            <a data-fancybox="gallery" href="img/lic3.jpg" class="lic-sl__slide"><img src="img/lic3.jpg"></a>
-          </div>
+          @@include('var/_lic-sl.html')
         </div>
       </section>
       <section class="section s-faq">
@@ -464,26 +192,7 @@
           </div>
         </div>
       </section>
-      
-      <section class="section"></section>
-      <section class="section"></section>
-      <section class="section"></section>
-      <section class="section"></section>
-      <section class="s-smap">
-        <div class="smap__wrapper">
-          <div class="contain">
-            <div class="smap__inn">
-              <div class="smap-contacts">
-                <div class="smap-contacts__title">Телефон для связи</div>
-                <div class="fc__info">
-                  <p>Круглосуточно. Анонимно</p>
-                  <a href="tel:" class="fc__info-tel">8 (495) 540-57-86</a>
-                </div><a href="" class="btn-o">Запись на прием</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      @@include('var/_s-smap.html')
 
 
     </main>
