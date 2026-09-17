@@ -87,7 +87,10 @@
       </section>
       <section class="section s-doctors">
         <div class="contain">
-          <h2>Врачи клиники</h2>
+          <div class="h2__w">            
+            <h2>Врачи клиники</h2>
+            <a href="" class="all-more all-more--arrows">Все врачи</a>            
+          </div>
           @@include('var/_doctors__sl.html')
         </div>
       </section>
@@ -151,13 +154,36 @@
       </section>
       <section class="section s-promo">
         <div class="contain">
-          <h2>Акции</h2>
-          @@include('var/_promo__row.html')
+          <div class="h2__w">
+            <h2>Акции</h2>
+            <a href="" class="all-more">Все акции</a>            
+          </div>
+          
+          <div class="promo__row">
+
+            @@include('var/_promo__item.html',{
+              "img":"img/promo-1.jpg",
+              "title":"Дарим скидку 15% на детокс-капельницу вам, вашим близким и друзьям!",
+              "date":"Акция до: 31 августа 2026"
+            })
+            @@include('var/_promo__item.html',{
+              "img":"img/promo-2.jpg",
+              "title":"Дарим скидку 15% на детокс-капельницу вам, вашим близким и друзьям!",
+              "date":"Акция до: 31 августа 2026"
+            })
+
+
+
+          </div>
+
         </div>
       </section>
       <section class="section s-reviews">
         <div class="contain">
-          <h2>Отзывы пациентов</h2>
+          <div class="h2__w">              
+            <h2>Отзывы пациентов</h2>
+            <a href="" class="all-more all-more--arrows">Все отзывы</a>            
+          </div>
         </div>
         @@include('var/_rev-sl__wrap.html')      
       </section>

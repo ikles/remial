@@ -215,6 +215,20 @@ jQuery(document).ready(function ($) {
     ],
   });
 
+  $('[data-fancybox="gal-list"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe: {
+      css: {
+        width: '950px',
+      },
+    },
+    slideClass: 'myClass',
+    baseClass: 'myclass',
+  });
+
   $('[data-fancybox="certif-doc"]').fancybox({
     arrows: true,
     infobar: false,
