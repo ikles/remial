@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>13. Видео</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О клинике</a></li>
+            <li>Видео</li>            
+          </ul>
+        </div>
+      </div>
+
+      <div class="news-list__page">
+        <section class="s-news">
+          <div class="contain">
+            <h1>Видеоролики</h1>
+            <div class="tabs news-list__tabs">
+              <ul class="tabs__list">
+                <li class="tabs__list-item active">Все видео</li>
+                <li class="tabs__list-item">О врачах</li>  
+                <li class="tabs__list-item">О клинике</li>  
+                <li class="tabs__list-item">Отзывы</li>  
+              </ul>
+              <ul class="tabs__content-list">
+                <li class="tabs__content-list-item active">
+                  <div class="news-blog__list">
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                  </div>            
+                  <div class="more-btn-ajax__w">
+                    <a href="" class="btn-o">Показать еще 12 из 100 ...</a>
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="news-blog__list">
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="news-blog__list">
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="news-blog__list">
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')
+                    @@include('var/_vid-with__item2.html')                    
+                  </div>
+                </li>  
+              </ul>
+
+            </div><!--tabs-->
+
+          </div>
+        </section>
+      </div><!--news-list__page-->
+
+
+      
+
+
+
+      
+      @@include('var/_s-smap.html')
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

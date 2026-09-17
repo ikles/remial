@@ -90,7 +90,7 @@ jQuery(document).ready(function ($) {
         isMobile.iOS() ||
         isMobile.Opera() ||
         isMobile.Windows()
-      );
+        );
     },
   };
 
@@ -513,28 +513,41 @@ jQuery(document).ready(function ($) {
     });
   });
 
-  $('.why__icon').each(function () {
-    var $img = $(this).find('img');
-    var imgSrc = $img.attr('src');
+$('.why__icon').each(function () {
+  var $img = $(this).find('img');
+  var imgSrc = $img.attr('src');
 
-    if (imgSrc && imgSrc.endsWith('.svg')) {
-      $.ajax({
-        url: imgSrc,
-        dataType: 'text',
-        success: function (svgCode) {
+  if (imgSrc && imgSrc.endsWith('.svg')) {
+    $.ajax({
+      url: imgSrc,
+      dataType: 'text',
+      success: function (svgCode) {
           // Заменяем весь контент .why__icon на SVG код
-          $(this).html(svgCode);
-        }.bind(this),
-        error: function () {
-          console.error('Ошибка загрузки SVG:', imgSrc);
-        },
-      });
-    }
-  });
+        $(this).html(svgCode);
+      }.bind(this),
+      error: function () {
+        console.error('Ошибка загрузки SVG:', imgSrc);
+      },
+    });
+  }
+});
 
-  document.addEventListener(
-    'wpcf7mailsent',
-    function (event) {
+
+function tabs(element) {    
+  $(element).find('.tabs__list-item').click(function () {
+    $(element).find('.tabs__list-item').removeClass('active');
+    $(this).addClass('active');    
+    let num = $(this).index();
+    $(element).find('.tabs__content-list-item').removeClass('active');
+    $(element).find('.tabs__content-list-item').eq(num).addClass('active');  
+  });
+}
+
+tabs('.news-list__tabs');
+
+document.addEventListener(
+  'wpcf7mailsent',
+  function (event) {
       var form = jQuery(event.target); // Берем отправленную форму
       var formId = event.detail.contactFormId; // ID формы
 
@@ -578,7 +591,7 @@ jQuery(document).ready(function ($) {
       if (phone && phone != '') {
         $.ajax({
           url:
-            'https://api.calltouch.ru/calls-service/RestAPI/requests/' + ct_site_id + '/register/',
+          'https://api.calltouch.ru/calls-service/RestAPI/requests/' + ct_site_id + '/register/',
           dataType: 'json',
           type: 'POST',
           data: ct_data,
@@ -602,5 +615,5 @@ jQuery(document).ready(function ($) {
       }
     },
     false,
-  );
+    );
 }); //ready
