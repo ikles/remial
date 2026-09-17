@@ -3289,6 +3289,9 @@ input[type="text"] {
   line-height: 1.5;
   color: rgb(43, 48, 55);
   margin-bottom: 0;
+  &:empty {
+    display: none;
+  }
 }
 
 .articl-doc__row {
@@ -3323,6 +3326,33 @@ input[type="text"] {
     top: -143px;
   }
 }
+
+
+.news-list__page {
+  .s-news {
+    padding-bottom: 120px;
+  }
+  h1 {
+    margin-bottom: 46px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: var(--black);
+  }
+}
+
+.news-blog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.more-btn-ajax__w {
+  margin-top: 50px;
+  display: flex;  
+  justify-content: center;
+}
+
 
 
 //2000
