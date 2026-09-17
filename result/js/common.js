@@ -191,6 +191,30 @@ jQuery(document).ready(function ($) {
     ],
   });
 
+  $('.vid-with__sl').slick({
+    infinite: true,
+    slidesToShow: 3,
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,
+    touchThreshold: 200,
+    autoplaySpeed: 4000,
+    cssEase: 'ease-out',
+    dots: false,    
+    arrows: true,    
+    responsive: [
+      {
+        breakpoint: 641,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+          arrows: false,
+          swipe: true,
+        },
+      },
+    ],
+  });
+
   $('[data-fancybox="certif-doc"]').fancybox({
     arrows: true,
     infobar: false,

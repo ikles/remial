@@ -164,25 +164,93 @@
                   </div>
                   <a href="" class="show-more">Показать ещё</a>
                 </div>
-                <div class="about__block">
-                  <div class="vid-with__h-w">
-                    <div class="h2">Видео с врачом</div><a href="" class="all-vid">Все видео</a></div>
-                    <div class="vid-with">
-                      <div class="vid-with__item">
-                        <div class="vid-with__img-w"><img src="img/vid-with.jpg" class="vid-with__img"><a href="" class="vid-with__play"></a></div>
-                        <p class="vid-with__txt">Отзыв пациента лечившийся от алкогольной зависимости в клинике “Ремиаль”</p>
-                      </div>
-                    </div>
+                <div class="about__block vid-with__block">
+                  <div class="h2__w">
+                    <h2>Видео с врачом</h2>
+                    <a href="" class="all-more all-more--arrows">Все видео</a>
                   </div>
+
+                  <div class="vid-with__sl">
+                    <a href="" class="vid-with__item">
+                      <div class="vid-with__img-w">
+                        <img src="img/vid-with.jpg">                        
+                      </div>
+                      <p>Отзыв пациента лечившийся от алкогольной зависимости в клинике “Ремиаль”</p>
+                    </a>
+                    <a href="" class="vid-with__item">
+                      <div class="vid-with__img-w">
+                        <img src="img/vid-with.jpg">                        
+                      </div>
+                      <p>Отзыв пациента лечившийся от алкогольной зависимости в клинике “Ремиаль”</p>
+                    </a>
+                    <a href="" class="vid-with__item">
+                      <div class="vid-with__img-w">
+                        <img src="img/vid-with.jpg">                        
+                      </div>
+                      <p>Отзыв пациента лечившийся от алкогольной зависимости в клинике “Ремиаль”</p>
+                    </a>
+                    <a href="" class="vid-with__item">
+                      <div class="vid-with__img-w">
+                        <img src="img/vid-with.jpg">                        
+                      </div>
+                      <p>Отзыв пациента лечившийся от алкогольной зависимости в клинике “Ремиаль”</p>
+                    </a>
+                  </div>
+
                 </div>
               </div>
             </div>
-          </section> 
-          @@include('var/_s-smap.html')
+          </div>
+        </section> 
+        <section class="section s-reviews">
+          <div class="contain">
+            <div class="h2__w">
+              <h2>Отзывы о враче</h2>
+              <a href="" class="all-more">Все отзывы</a>
+              <a href="" class="btn-o">Оставить отзыв</a>
+            </div>
+          </div>
+          @@include('var/_rev-sl__wrap.html')      
+        </section>
+        <section class="s-articl-doc">
+          <div class="contain">
+            <div class="h2__w">
+              <h2>Статьи, проверенные врачом</h2>
+              <a href="" class="all-more">Смотреть все</a>
+            </div>
+            <div class="articl-doc__w">
+              @@include('var/_articl-doc__item.html',{
+                "img":"img/articl-doc-1.jpg",
+                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+              })
+              @@include('var/_articl-doc__item.html',{
+                "img":"img/articl-doc-1.jpg",
+                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+              })
+              @@include('var/_articl-doc__item.html',{
+                "img":"img/articl-doc-1.jpg",
+                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+              })
+            </div>
+          </div>
+        </section> 
+        <section class="section s-doctors">
+          <div class="contain">
+            <div class="h2__w">
+              <h2>Другие врачи</h2>
+              <a href="" class="all-more all-more--arrows">Все врачи</a>
+            </div>
+            @@include('var/_doctors__sl.html')
+          </div>
+        </section>
+        @@include('var/_s-smap.html')
 
-        </main>
-        @@include('var/_footer.html')    
-      </div>
+      </main>
+      @@include('var/_footer.html')    
+    </div>
 <!--wrapper-->
 
 @@include('var/_scripts.html')
