@@ -1188,6 +1188,16 @@ input[type="text"]:focus {
   display: flex;
   padding: 60px 0px 0px 80px; }
 
+.s-sform__bg--l {
+  padding: 60px 100px 0px 37px;
+  border-radius: 242px 36px 36px 36px; }
+  .s-sform__bg--l .s-sform__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 109px;
+    margin-right: 70px; }
+
 .s-sform__content {
   margin-right: 88px;
   padding-bottom: 60px;
@@ -1219,6 +1229,7 @@ input[type="text"]:focus {
   .s-sform__form-w input[type="tel"],
   .s-sform__form-w input[type="password"],
   .s-sform__form-w input[type="text"] {
+    background: none;
     border: 1px solid white;
     border-radius: 18px;
     padding: 10px 30px;
@@ -1228,6 +1239,11 @@ input[type="text"]:focus {
     line-height: 1.2;
     color: white;
     margin-bottom: 27px; }
+    .s-sform__form-w input[type="email"]::placeholder,
+    .s-sform__form-w input[type="tel"]::placeholder,
+    .s-sform__form-w input[type="password"]::placeholder,
+    .s-sform__form-w input[type="text"]::placeholder {
+      color: #FFF; }
   .s-sform__form-w button,
   .s-sform__form-w input[type="submit"] {
     padding: 10px 30px;
@@ -1257,6 +1273,11 @@ input[type="text"]:focus {
     bottom: 0px;
     right: 50px;
     max-width: 100%; }
+
+.s-sform__img--l {
+  width: 533px; }
+  .s-sform__img--l img {
+    right: 0; }
 
 .s-doctors {
   padding-top: 65px;
