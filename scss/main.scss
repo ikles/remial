@@ -1104,9 +1104,14 @@ input[type="text"] {
   color: #fff;
 }
 
+
+.sform__info-2 {
+  width: 310px;  
+  flex: none;
+}
+
 .s-sform__form-w {
   padding-left: 0px;
-  width: 310px;
   flex: 0 0 auto;
   padding-bottom: 60px;
   form {
@@ -1180,19 +1185,181 @@ input[type="text"] {
   }
 }
 
+.s-sform__bg-3 {
+  border-radius: 36px 36px 242px 36px;
+  width: 100%;
+  background: var(--main-blue);
+  padding: 60px 0 0 80px;  
+  min-height: 402px;
+  display: flex;            
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+
+
+.s-sform__img-3 {
+  display: block;  
+  position: relative;
+  width: 643px;
+  margin-right: 55px;
+  flex: none;
+  font-size: 0;
+  line-height: 1;
+  img {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.s-sform__grid {
+  display: flex;  
+  flex-direction: column;  
+  flex-grow: 1;
+  gap: 30px;
+  max-width: 900px;
+  padding-bottom: 107px;
+  margin-right: auto;
+}
+
+.s-sform__inn {
+  display: flex;  
+  align-items: flex-end;
+  line-height: 1;
+}
+
+.sform-row__info {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53846;
+  color: #fff;
+  padding-left: 24px;    
+  flex: 1 1 auto;
+  a {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
+
+.s-sform__row-2 {  
+  align-items: center;
+  display: flex;  
+  form {
+    display: flex;
+    gap: 30px;    
+    flex: none;
+  }
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="text"] {
+    background: none;
+    border: 1px solid white;
+    border-radius: 18px;
+    padding: 10px 30px;
+    height: 60px;    
+    font-size: 18px;
+    line-height: 1.2;
+    color: white;    
+    width: 310px;    
+    flex: none;
+    &::placeholder {
+      color: #FFF;
+    }
+  }
+  button,
+  input[type="submit"] {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--d9d9d9);
+    background: white;
+    border-radius: 18px;
+    padding: 0px 30px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;    
+    width: 224px;    
+    flex: none;
+  }  
+}
+
+.s-sform__title-2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.s-sform__row {
+  display: flex;
+  gap: 30px;
+}
+.sform-row__txt {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.sform__info-2 {
+  border-radius: 18px;
+  padding: 15px 20px;  
+  height: 67px;
+  display: flex;  
+  justify-content: center;
+  background: #e8edf6;  
+  flex-direction: column;
+  padding-left: 56px;
+  position: relative;
+  .sform__info-tel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--main-blue);
+    margin-bottom: 0;
+  }
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    color: #121820;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:before {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 22px;
+    content: "";
+    display: block;
+    background: url("../img/form-tel.svg") no-repeat 0 0;
+    width: 24px;
+    height: 24px;    
+    flex: none;
+  }  
+}
+
+.sform__info-tel {}
+.sform-row__txt {}
+.sform__form {}
+.sform__input {}
+
+.sform-row__info {}
+
 .s-doctors {
   padding-top: 65px;
   padding-bottom: 65px;
 }
 
 
-.h2 {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 1.2;
-  color: rgb(11, 14, 18);
-  margin-bottom: 50px;
-}
+
 
 .doctors__sl {
   margin-left: -15px;
@@ -2650,7 +2817,7 @@ input[type="text"] {
 
 
 .content {
-  padding-top: 50px;
+  
   p {
     font-weight: 400;
     font-size: 20px;
@@ -2813,7 +2980,6 @@ input[type="text"] {
       color: var(--black);
       margin-bottom: 17px;
     }
-
   }
 }//content
 
@@ -3415,7 +3581,57 @@ input[type="text"] {
   }
 }
 
+.text-page {
+  font-size: 20px;
+  padding-bottom: 140px;
+  p {
+    font-weight: 400;
+    line-height: 2.01;
+    color: #000;
+    margin-bottom: 37px;    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  img.floatleft {
+    border-radius: 24px;
+    max-width: 669px;
+    height: auto;
+    aspect-ratio: 1.784 / 1;
+    margin-right: 32px;
+    margin-bottom: 23px;
+  }
+}
 
+.article-date {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #2b3037;
+}
+
+.floatleft {
+  float: left;
+}
+
+ul.docs__list {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  li {
+    a {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #121820;
+      &:hover {
+
+      }
+    }
+  }
+}
+
+.text-page,
 .news-list__page {
   .s-news {
     padding-bottom: 120px;
