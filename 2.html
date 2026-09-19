@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. Врачи</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="#">Главная</a></li>            
+            <li>Врачи</li>            
+          </ul>
+        </div>
+      </div>
+
+      <div class="news-list__page">
+        <section class="s-doctors-list">
+          <div class="contain">
+            <h1>Врачи</h1>
+            <div class="doctors-list">
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doc-1.png",
+                "op":"Опыт 35 лет",
+                "name":"Киселев Тимофей Викторович",
+                "dol":"Заместитель главного врача по реабилитационной работе."
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doc-2.png",
+                "op":"Опыт 35 лет",
+                "name":"Киселев Тимофей Викторович",
+                "dol":"Заместитель главного врача по реабилитационной работе."
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doc-3.png",
+                "op":"Опыт 35 лет",
+                "name":"Киселев Тимофей Викторович",
+                "dol":"Заместитель главного врача по реабилитационной работе."
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doc-1.png",
+                "op":"Опыт 35 лет",
+                "name":"Киселев Тимофей Викторович",
+                "dol":"Заместитель главного врача по реабилитационной работе."
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doc-2.png",
+                "op":"Опыт 35 лет",
+                "name":"Киселев Тимофей Викторович",
+                "dol":"Заместитель главного врача по реабилитационной работе."
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doc-3.png",
+                "op":"Опыт 35 лет",
+                "name":"Киселев Тимофей Викторович",
+                "dol":"Заместитель главного врача по реабилитационной работе."
+              })
+            </div>
+          </div>
+        </section>
+        <section class="s-doctors-list">
+          <div class="contain">
+            <h2>Администрация</h2>
+            <div class="doctors-list">
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doc-1.png",
+                "op":"Опыт 35 лет",
+                "name":"Киселев Тимофей Викторович",
+                "dol":"Заместитель главного врача по реабилитационной работе."
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doc-2.png",
+                "op":"Опыт 35 лет",
+                "name":"Киселев Тимофей Викторович",
+                "dol":"Заместитель главного врача по реабилитационной работе."
+              })
+            </div>
+          </div>
+        </section>
+      <div class="section s-sform">
+          <div class="contain">
+            @@include('var/_s-sform__bg.html')            
+          </div>
+        </div>
+      </div>
+      
+      @@include('var/_s-smap.html')
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

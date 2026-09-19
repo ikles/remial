@@ -1315,6 +1315,17 @@ input[type="text"]:focus {
   flex-direction: column;
   align-items: flex-start; }
 
+.doctors-item__img-w {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 0 0 129px 24px;
+  margin-bottom: 23px;
+  padding-top: 34px; }
+  .doctors-item__img-w .doctors-item__img {
+    margin-bottom: 0; }
+
 .doctors-item__img {
   border-radius: 129px 24px;
   width: 100%;
@@ -1362,7 +1373,10 @@ input[type="text"]:focus {
   font-size: 26px;
   line-height: 1.2;
   color: #000;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  display: flex; }
+  .doctors-item__name:hover {
+    text-decoration: none; }
 
 .doctors-item__dol {
   font-weight: 500;
@@ -1375,11 +1389,37 @@ input[type="text"]:focus {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
-  color: var(--d9d9d9); }
+  color: var(--d9d9d9);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap; }
+  .doctors-item__cons b {
+    font-weight: 700;
+    color: #121820; }
+
+.free {
+  background: url("../img/free.svg") no-repeat left center;
+  min-height: 36px;
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 39px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #eb643b; }
 
 .doctors__btn {
   min-width: 250px;
   margin-top: 40px; }
+
+.doctors-item__bottom {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 26px; }
+  .doctors-item__bottom .doctors__btn {
+    margin-top: 0; }
 
 .subtitle {
   margin-top: -20px;
@@ -3091,6 +3131,24 @@ input[type="text"]:focus {
       width: 100%;
       height: 100%; }
 
+.promo__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; }
+  .promo__list .promo-item__img {
+    height: 273px; }
+
+.s-doctors-list + .s-doctors-list {
+  padding-top: 80px; }
+
+.doctors-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 85px 30px; }
+
+.s-doctors-form .s-sform__bg {
+  margin-top: 222px; }
+
 @media (max-width: 1679px) {
   .wrapper {
     zoom: 0.8; } }
@@ -3457,8 +3515,9 @@ input[type="text"]:focus {
   .doctors-item__dol {
     margin-bottom: 30px;
     font-size: 16px; }
+  .free,
   .doctors-item__cons {
-    font-size: 16px; }
+    font-size: 14px; }
   .subtitle {
     font-size: 18px; }
   .how__list {
@@ -3578,7 +3637,13 @@ input[type="text"]:focus {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.17;
-    color: #d2252e; } }
+    color: #d2252e; }
+  .doctors-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; }
+  .s-doctors-form .s-sform__bg {
+    margin-top: 80px; } }
 
 @media (max-width: 991px) {
   .vid__w {
@@ -3715,7 +3780,10 @@ input[type="text"]:focus {
   .vid .vid__l {
     padding-right: calc((100vw - 750px)/2); }
   .vid__prices {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .doctors-list {
+    display: flex;
+    flex-direction: column; } }
 
 @media (max-width: 767px) {
   .vid .vid__l {
@@ -4112,7 +4180,42 @@ input[type="text"]:focus {
       width: 100%;
       height: 100%;
       max-width: unset;
-      object-position: top left; } }
+      object-position: top left; }
+  .doctors-item__img-w {
+    border-radius: 0px 0px 60px 16px;
+    padding-top: 39px; }
+    .doctors-item__img-w .doctors-item__img {
+      border-radius: 60px 16px 60px 16px; }
+  .news-list__page h1 {
+    font-size: 24px; }
+  .bread {
+    margin: 15px 0; }
+    .bread ul li {
+      font-size: 10px; }
+      .bread ul li:not(:last-child):after {
+        font-size: 10px; }
+  .doctors-item__play {
+    width: 36px;
+    height: 36px;
+    right: 15px;
+    top: 15px;
+    background-size: 36px; }
+  .doctors-item__cons {
+    gap: 10px; }
+  .free {
+    font-size: 12px;
+    padding-left: 26px;
+    background-size: 20px; }
+  .doctors-item__dol {
+    margin-bottom: 15px; }
+  .doctors-item__bottom {
+    gap: 20px; }
+  .doctors__btn {
+    width: auto;
+    padding: 0 50px;
+    min-width: unset; }
+  .promo__more {
+    font-size: 14px; } }
 
 @media (max-width: 375px) {
   .top-line__geo,

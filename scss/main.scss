@@ -1233,6 +1233,19 @@ input[type="text"] {
   align-items: flex-start;
 }
 
+.doctors-item__img-w {
+  width: 100%;
+  display: flex;            
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 0 0 129px 24px;  
+  margin-bottom: 23px;
+  padding-top: 34px;
+  .doctors-item__img {
+    margin-bottom: 0;
+  }
+}
+
 .doctors-item__img {
   border-radius: 129px 24px;
   width: 100%;
@@ -1280,15 +1293,16 @@ input[type="text"] {
   right: 30px;
 }
 
-.w-a {
-}
-
 .doctors-item__name {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: #000;
   margin-bottom: 16px;
+  display: flex;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .doctors-item__dol {
@@ -1304,6 +1318,25 @@ input[type="text"] {
   font-size: 18px;
   line-height: 1.2;
   color: var(--d9d9d9);
+  display: flex;
+  gap: 30px;
+  align-items: center;  
+  flex-wrap: wrap;
+  b {
+    font-weight: 700;
+    color: #121820;
+  }
+}
+
+.free {
+  background: url("../img/free.svg") no-repeat left center;
+  min-height: 36px;display: flex;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 39px;
+  font-weight: 700;
+  font-size: 18px;  
+  color: #eb643b;
 }
 
 .doctors__btn {    
@@ -1311,9 +1344,14 @@ input[type="text"] {
   margin-top: 40px;
 }
 
-
-
-.s-how {
+.doctors-item__bottom {
+  margin-top: 40px;
+  display: flex;  
+  align-items: center;
+  gap: 26px;
+  .doctors__btn {
+    margin-top: 0;
+  }
 }
 
 .subtitle {
@@ -3458,6 +3496,33 @@ input[type="text"] {
 }
 }
 
+.promo__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  .promo-item__img {
+    height: 273px;
+  }
+}
+
+.s-doctors-list {
+  + .s-doctors-list {
+    padding-top: 80px;
+  }
+}
+
+.doctors-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 85px 30px;  
+}
+
+.s-doctors-form {
+  .s-sform__bg {
+    margin-top: 222px;    
+  }
+}
+
 //2000
 
 
@@ -3491,3 +3556,6 @@ body {
     }
   }    
 }
+
+
+

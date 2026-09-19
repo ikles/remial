@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>11. Новости</title>  
+  <title>5. Акции</title>  
   @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,18 +22,25 @@
       <div class="bread">
         <div class="contain">
           <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О клинике</a></li>
-            <li>Новости</li>            
+            <li><a href="#">Главная</a></li>            
+            <li>Акции</li>            
           </ul>
         </div>
       </div>
-      
-        @@include('var/_s-smap.html')
 
-      </main>
-      @@include('var/_footer.html')    
-    </div>
+      <div class="news-list__page">
+        <section class="s">
+          <div class="contain">
+            <h1>Фотогалерея</h1>
+          </div>
+        </section>
+      </div>
+      
+      @@include('var/_s-smap.html')
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
 <!--wrapper-->
 
 @@include('var/_scripts.html')

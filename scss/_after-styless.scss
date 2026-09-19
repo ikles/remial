@@ -506,8 +506,9 @@
     margin-bottom: 30px;
     font-size: 16px;
   }
+  .free,
   .doctors-item__cons {
-    font-size: 16px;
+    font-size: 14px;
   }
   .subtitle {
     font-size: 18px;
@@ -666,6 +667,14 @@
  font-size: 16px;
  line-height: 1.17;
  color: #d2252e; 
+}
+.doctors-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.s-doctors-form .s-sform__bg {
+  margin-top: 80px;
 }
 }//1199
 
@@ -865,6 +874,10 @@
   }
   .vid__prices {
     max-width: 100%;
+  }
+  .doctors-list {
+    display: flex;    
+    flex-direction: column;
   }
 }//991
 
@@ -1396,6 +1409,56 @@ h2, .h2 {
       max-width: unset;
       object-position: top left;
     }
+  }
+  .doctors-item__img-w {
+    border-radius: 0px 0px 60px 16px;
+    padding-top: 39px;
+    .doctors-item__img {    
+      border-radius: 60px 16px 60px 16px;
+    }
+  } 
+  .news-list__page h1 {
+    font-size: 24px;
+  }
+  .bread {
+    margin: 15px 0;
+    ul li {
+      font-size: 10px;
+      &:not(:last-child) {
+        &:after {
+          font-size: 10px;          
+        }
+      }
+    }
+  }
+  .doctors-item__play {
+    width: 36px;
+    height: 36px;
+    right: 15px;
+    top: 15px;    
+    background-size: 36px;
+  }
+  .doctors-item__cons {
+    gap: 10px;
+  }
+  .free {
+    font-size: 12px;
+    padding-left: 26px;    
+    background-size: 20px;
+  }
+  .doctors-item__dol {
+    margin-bottom: 15px;
+  }
+  .doctors-item__bottom {  
+    gap: 20px;
+  }
+  .doctors__btn {
+    width: auto;
+    padding: 0 50px;
+    min-width: unset;
+  }
+  .promo__more {
+    font-size: 14px;
   }
 }//575
 
