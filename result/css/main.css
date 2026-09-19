@@ -3353,6 +3353,22 @@ ul.docs__list {
 .s-doctors-form .s-sform__bg {
   margin-top: 222px; }
 
+.p-404 {
+  text-align: center; }
+  .p-404 h1 {
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 1;
+    color: var(--d9d9d9);
+    margin-bottom: 0; }
+  .p-404 p.not-found-p {
+    margin-top: -15px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--#000000);
+    margin-bottom: 40px; }
+
 @media (max-width: 1679px) {
   .wrapper {
     zoom: 0.8; } }

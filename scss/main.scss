@@ -2817,7 +2817,7 @@ input[type="text"] {
 
 
 .content {
-  
+
   p {
     font-weight: 400;
     font-size: 20px;
@@ -3605,9 +3605,9 @@ input[type="text"] {
 
 .article-date {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #2b3037;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b3037;
 }
 
 .floatleft {
@@ -3761,6 +3761,27 @@ ul.docs__list {
     margin-top: 222px;    
   }
 }
+
+.p-404 {
+  text-align: center;
+  h1 {
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 1;
+    color: var(--d9d9d9);
+    margin-bottom: 0;
+  }
+
+  p.not-found-p {
+    margin-top: -15px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--black);
+    margin-bottom: 40px;
+  }
+}
+
 
 //2000
 
