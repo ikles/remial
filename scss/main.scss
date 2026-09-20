@@ -11,7 +11,7 @@ $bc: bottom center;
 $i: !important;
 $tr: transparent;
 $bord: 1px solid #EAEAEA;
-$black: #000;
+$bl: #121820;
 $bcol: #f3ebdc;
 $ff2: 'Open Sans', sans-serif;
 
@@ -747,6 +747,12 @@ input[type="text"] {
 }
 
 .main-lanidig {
+  @media (min-width : 1366px) {
+    .h2,
+    h2 {
+      font-size: 42px;
+    }
+  }
   .vid__w {
     min-height: unset;
   }
@@ -758,9 +764,10 @@ input[type="text"] {
       font-size: 20px;
     }
   }
-  .vid__l h1 {
+  .vid__l h1 {    
     @media (min-width : 641px) {
       font-size: 50px;      
+      color: $bl;
     }
   }
   .vid__r {
@@ -774,6 +781,7 @@ input[type="text"] {
     }
   }
   .vid__l {
+    padding-top: 0;
     padding-bottom: 0;
     @media (max-width : 1199px) {
       padding-bottom: 30px;    
@@ -793,8 +801,6 @@ input[type="text"] {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-
-
 
 .items__img {
   width: 61px;
@@ -850,6 +856,16 @@ input[type="text"] {
   }
 }
 
+
+.advants__w-2 {
+  .advants__item {    
+    flex-direction: row;    
+    align-items: center;
+    background-image: none;
+    min-height: 111px;
+    gap: 23px;
+  }
+}
 
 .serv {
   padding-top: 65px;
@@ -3147,6 +3163,9 @@ input[type="text"] {
 .bread {
   margin-top: 56px;
   margin-bottom: 50px;
+  + .vid {
+    padding-top: 0;
+  }
   ul {
     display: flex;    
     gap: 10px;    

@@ -941,6 +941,11 @@ input[type="text"]:focus {
     height: 64px;
     margin-right: 15px; }
 
+@media (min-width: 1366px) {
+  .main-lanidig .h2,
+  .main-lanidig h2 {
+    font-size: 42px; } }
+
 .main-lanidig .vid__w {
   min-height: unset; }
 
@@ -953,7 +958,8 @@ input[type="text"]:focus {
 
 @media (min-width: 641px) {
   .main-lanidig .vid__l h1 {
-    font-size: 50px; } }
+    font-size: 50px;
+    color: #121820; } }
 
 .main-lanidig .vid__r {
   display: flex;
@@ -965,6 +971,7 @@ input[type="text"]:focus {
     left: 0; }
 
 .main-lanidig .vid__l {
+  padding-top: 0;
   padding-bottom: 0; }
   @media (max-width: 1199px) {
     .main-lanidig .vid__l {
@@ -1021,6 +1028,13 @@ input[type="text"]:focus {
     background-image: url("../img/bg-it-4.svg");
     background-repeat: no-repeat;
     background-position: right 0px bottom; }
+
+.advants__w-2 .advants__item {
+  flex-direction: row;
+  align-items: center;
+  background-image: none;
+  min-height: 111px;
+  gap: 23px; }
 
 .serv {
   padding-top: 65px;
@@ -2881,6 +2895,8 @@ input[type="text"]:focus {
 .bread {
   margin-top: 56px;
   margin-bottom: 50px; }
+  .bread + .vid {
+    padding-top: 0; }
   .bread ul {
     display: flex;
     gap: 10px;
