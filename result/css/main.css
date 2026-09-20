@@ -3493,56 +3493,55 @@ ul.docs__list {
           width: 100%;
           background: var(--main-blue); }
 
-.crit {
-  margin-top: 30px;
+.content table,
+.accordion-content table {
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: separate;
+  border-spacing: 0;
   border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 50px; }
+  overflow: hidden; }
 
-.crit__top {
-  height: 80px;
-  display: flex; }
+.content td,
+.accordion-content td {
+  padding: 15px 30px;
+  width: 33.3333%; }
 
-.crit__title {
-  width: 33.333%;
+.content thead td,
+.accordion-content thead td {
+  padding: 26px 30px;
   background: #8da6d6;
   font-weight: 700;
   font-size: 18px;
-  color: #1e1e1d;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  color: #1e1e1d; }
+  .content thead td:first-child,
+  .accordion-content thead td:first-child {
+    border-radius: 12px 0 0 0; }
+  .content thead td:last-child,
+  .accordion-content thead td:last-child {
+    border-radius: 0 12px 0 0; }
 
-.crit__row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #f5f8ff;
-  border-left: 1px solid #f5f8ff;
-  border-right: 1px solid #f5f8ff;
-  height: 60px; }
-
-.crit__cell {
-  width: 33.333%;
+.content tbody td,
+.accordion-content tbody td {
   font-size: 20px;
   color: #1e1e1d;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-left: 1px solid #f5f8ff;
   border-right: 1px solid #f5f8ff;
-  height: 100%;
-  padding-left: 30px; }
+  border-bottom: 1px solid #f5f8ff; }
+  .content tbody td:first-child,
+  .accordion-content tbody td:first-child {
+    border-left: 1px solid #f5f8ff; }
 
-.crit__row-blue {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #f5f8ff;
-  border-left: 1px solid #f5f8ff;
-  border-right: 1px solid #f5f8ff;
-  height: 60px;
+.content tbody tr:nth-child(even) td,
+.accordion-content tbody tr:nth-child(even) td {
   background: #f5f8ff; }
+
+.content tbody tr:last-child td:first-child,
+.accordion-content tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px; }
+
+.content tbody tr:last-child td:last-child,
+.accordion-content tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px; }
 
 @media (max-width: 1679px) {
   .wrapper {
