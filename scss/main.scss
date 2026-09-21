@@ -5201,6 +5201,47 @@ ul.spagin {
   height: 80px;
 }
 
+.home-vis {
+  margin-top: 50px;  
+  ul {    
+    columns: 3;    
+    column-gap: 30px;    
+    li {      
+      page-break-inside: avoid;
+      break-inside: avoid;
+      margin-bottom: 30px;
+      &:nth-last-child(3),
+      &:nth-last-child(2),
+      &:nth-last-child(1) {
+
+      }
+
+      a {
+        font-size: 20px;
+        color: rgb(18, 24, 32);
+        display: block;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.get__h {
+  font-weight: 700;
+  font-size: 36px;  
+  color: var(--d9d9d9);
+  margin-bottom: 46px;
+}
+
+.home-vis__ul-w {
+  width: 100%;    
+}
+
+
+
+
 //2000
 
 

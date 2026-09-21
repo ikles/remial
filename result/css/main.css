@@ -4504,6 +4504,31 @@ ul.spagin {
   width: 100%;
   height: 80px; }
 
+.home-vis {
+  margin-top: 50px; }
+  .home-vis ul {
+    columns: 3;
+    column-gap: 30px; }
+    .home-vis ul li {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      margin-bottom: 30px; }
+      .home-vis ul li a {
+        font-size: 20px;
+        color: #121820;
+        display: block; }
+        .home-vis ul li a:hover {
+          text-decoration: none; }
+
+.get__h {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--d9d9d9);
+  margin-bottom: 46px; }
+
+.home-vis__ul-w {
+  width: 100%; }
+
 @media (max-width: 1679px) {
   .wrapper {
     zoom: 0.8; } }
