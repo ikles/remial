@@ -4317,6 +4317,83 @@ ul.docs__list {
       background-position: center;
       font-size: 0; }
 
+.alc-treat__w {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+
+.alc-treat__item {
+  border-bottom: 1px solid #e8edf6;
+  padding-bottom: 30px; }
+  .alc-treat__item p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #1e1e1d;
+    margin-bottom: 0; }
+    .alc-treat__item p a {
+      font-weight: 600;
+      color: #3563a2; }
+
+.alc-treat__serv {
+  font-size: 15px;
+  color: #8da6d6;
+  display: inline-flex;
+  margin-bottom: 16px; }
+
+.alc-treat__title {
+  display: block;
+  font-weight: 600;
+  font-size: 28px;
+  color: #3563a2;
+  margin-bottom: 16px; }
+  .alc-treat__title:hover {
+    text-decoration: none; }
+
+ul.spagin {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 50px; }
+  ul.spagin li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 8px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--main-blue-light);
+    transition: background 0.33s;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--#000000); }
+    ul.spagin li a.active {
+      background: var(--main-blue);
+      color: #FFF; }
+    @media (any-hover: hover) {
+      ul.spagin li a:hover {
+        text-decoration: none;
+        background: var(--main-blue);
+        color: #FFF; } }
+    ul.spagin li a.spagin-control {
+      background-color: var(--main-blue-light);
+      border: none;
+      position: relative; }
+      @media (any-hover: hover) {
+        ul.spagin li a.spagin-control:hover {
+          background: var(--main-blue); } }
+      ul.spagin li a.spagin-control:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: url("../img/slick-arr.svg") no-repeat center; }
+      ul.spagin li a.spagin-control.disable {
+        background-color: #d7dff0; }
+      ul.spagin li a.spagin-control.spagin-next:before {
+        transform: rotate(180deg); }
+
 @media (max-width: 1679px) {
   .wrapper {
     zoom: 0.8; } }

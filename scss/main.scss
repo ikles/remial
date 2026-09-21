@@ -4956,8 +4956,112 @@ ul.docs__list {
       font-size: 0;
     }    
   }
+}
+
+
+
+.alc-treat__w {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.alc-treat__item {
+  border-bottom: 1px solid rgb(232, 237, 246);
+  padding-bottom: 30px;
+  p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgb(30, 30, 29);
+    margin-bottom: 0;
+    a {
+      font-weight: 600;
+      color: #3563a2;      
+    }  
+  }
 
 }
+
+.alc-treat__serv {
+  font-size: 15px;
+  color: rgb(141, 166, 214);
+  display: inline-flex;
+  margin-bottom: 16px;
+}
+
+.alc-treat__title {
+  display: block;
+  font-weight: 600;
+  font-size: 28px;
+  color: rgb(53, 99, 162);
+  margin-bottom: 16px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul.spagin {
+  display: flex;  
+  align-items: center;
+  gap: 11px;
+  margin-top: 50px;
+  li {
+    a {
+      display: inline-flex;      
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px 8px;
+      width: 60px;
+      height: 60px;
+      border: 1px solid var(--main-blue-light);      
+      transition: background 0.33s;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1;
+      color: var(--black);
+      &.active {
+        background: var(--main-blue);
+        color: #FFF;
+      }
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: none;
+          background: var(--main-blue);
+          color: #FFF;
+        }
+      }
+      &.spagin-control {
+        background-color: var(--main-blue-light);
+        border: none;
+        position: relative;
+        @media (any-hover: hover) {
+          &:hover {
+            background: var(--main-blue);
+          }
+        }
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          background: url("../img/slick-arr.svg") no-repeat center;
+        }  
+        &.disable {
+          background-color: #d7dff0;    
+        }
+        &.spagin-next {
+          &:before {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+    }
+  }
+}
+.spagin-prev {}
+.active {}
 
 //2000
 
