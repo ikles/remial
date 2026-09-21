@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>15. Вакансия</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="#">Главная</a></li>            
+            <li><a href="#">Вакансии</a></li>            
+            <li>Врач психиатр-нарколог</li>            
+          </ul>
+        </div>
+      </div>
+
+      <div class="news-list__page">
+        <div class="contain">
+          <h1>Врач психиатр-нарколог</h1>
+
+          <div class="respon__w">
+            <div class="respon__l">
+              <div class="resp">
+                <div class="h2">Обязанности:</div>
+                <ul>
+                  <li>Прием, осмотр поступающих пациентов</li>
+                  <li>Заполнение истории болезни</li>
+                  <li>Ведение медицинской документации</li>
+                  <li>Проведение симптоматического лечения</li>
+                  <li>Наблюдение за динамикой</li>
+                  <li>Мотивационная психотерапевтическая работа</li>
+                  <li>Консультативная работа с родственниками</li>
+                </ul>
+              </div>
+              <div class="resp">
+                <div class="h2">Требования:</div>
+                <ul>
+                  <li>Действующий медицинский сертификат "Психиатр-нарколог"</li>
+                  <li>Коммуникабельность</li>
+                  <li>Пользователь ПК</li>
+                </ul>
+              </div>
+              <div class="resp">
+                <div class="h2">Условия:</div>
+                <ul>
+                  <li>Сменный график работы</li>
+                  <li>Доброжелательный дружный коллектив</li>
+                  <li>от 150 000 до 180 000 ₽ за месяц, до вычета налогов</li>
+                </ul>
+              </div>
+            </div>
+            <div class="respon__r">
+              <div class="interest">
+                <div class="interest__title">Заинтересовала вакансия?</div>
+                <p>Заполните форму, приложив своё резюме, либо отправьте на почту <a href="mailto: info@remial.ru" class="interest__link"> info@remial.ru</a></p>
+                <a href="" class="btn-wh btn-100">Отправить резюме</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      
+      @@include('var/_s-smap.html')
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

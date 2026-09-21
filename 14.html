@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>14. Вакансии</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="#">Главная</a></li>            
+            <li>Вакансии</li>            
+          </ul>
+        </div>
+      </div>
+
+      <div class="news-list__page">        
+        <div class="contain">
+          <h1>Вакансии</h1>
+          <div class="content">
+            <p>За более 30 лет работы Клиники Ремиль, мы смогли избавить от алкоголизма и наркомании более 70%, наших пациентов. Как свидетельствует официальная статистика Минсоцздравразвития, это в 6 раз выше показателей 1-2-летней ремиссии пациентов государственных наркологических центров.
+            Тысячи людей своей здоровой и трезвой жизнью доказали, что методы Клиники Ремиаль эффективны!</p>
+          </div>
+          <div class="vac__w">
+            @@include('var/_vac__item.html')
+            @@include('var/_vac__item.html')
+            @@include('var/_vac__item.html')
+            @@include('var/_vac__item.html')
+            @@include('var/_vac__item.html')
+            @@include('var/_vac__item.html')
+            @@include('var/_vac__item.html')
+            @@include('var/_vac__item.html')
+          </div>
+        </div>        
+      </div>
+      <section class="section s-sform">
+        <div class="contain">          
+          @@include('var/_s-sform__bg-vac.html')
+        </div>
+      </section>
+      @@include('var/_s-smap.html')
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
