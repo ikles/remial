@@ -215,6 +215,19 @@ jQuery(document).ready(function ($) {
     ],
   });
 
+  $('.get-img__sl').slick({
+    infinite: true,
+    slidesToShow: 1,
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,
+    touchThreshold: 200,
+    autoplaySpeed: 4000,
+    cssEase: 'ease-out',
+    dots: false,    
+    arrows: true,        
+  });
+
   $('[data-fancybox="gal-list"]').fancybox({
     arrows: true,
     infobar: false,
@@ -230,6 +243,20 @@ jQuery(document).ready(function ($) {
   });
 
   $('[data-fancybox="certif-doc"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe: {
+      css: {
+        width: '950px',
+      },
+    },
+    slideClass: 'myClass',
+    baseClass: 'myclass',
+  });
+
+  $('[data-fancybox="get-sl"]').fancybox({
     arrows: true,
     infobar: false,
     smallBtn: true,
@@ -558,6 +585,7 @@ function tabs(element) {
 }
 
 tabs('.news-list__tabs');
+tabs('.get__tabs');
 
 document.addEventListener(
   'wpcf7mailsent',

@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">  
-  <!--meta name="viewport" content="width=1200px"-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>18. 404</title>  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<!--meta name="viewport" content="width=1200px"-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7. Контакты</title>  
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="css/select2.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 <link rel="stylesheet" href="css/main.css">
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -117,18 +117,111 @@
         <div class="contain">
           <ul>
             <li><a href="#">Главная</a></li>            
-            <li>404</li>            
+            <li>Контакты</li>            
           </ul>
         </div>
       </div>
 
-      <div class="text-page content p-404">
-        <div class="contain">
-          <h1>404</h1>
-          <p class="not-found-p">Страница не найдена</p>
-          <a href="" class="btn">Вернуться на главную</a>
-        </div><!--contain-->      
-      </div><!--text-page-->
+      <div class="news-list__page">
+        <section class="s">
+          <div class="contain">
+            <h1>Контакты</h1>
+          </div>
+        </section>
+      </div>
+
+
+      <div class="contacts">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f321a313133929996b6db5fe7565d7b1b6db4487dcc19921cf159f764772525&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div class="contacts__w">
+          <div class="contain">
+            <div class="contacts__card">
+              <h2 class="contacts__title">Наши контакты</h2>
+              <p class="contacts__txt">Единая диспетчерская служба по Москве и Московской области:</p>
+              <div class="contacts__phone-w">
+                <a href="tel:8 (495) 540-57-86" class="contacts__phone">8 (495) 540-57-86</a>
+                <div class="contacts__socs">
+                  <a href=""><img src="./img/soc-h-1.svg"></a>
+                  <a href=""><img src="./img/soc-h-2.svg"></a>
+                </div>
+              </div>
+              <div class="contact">
+                <div class="contacts__address-w">
+                  <div class="contacts__address">Адрес клиники:</div>
+                  <div class="contacts__address-txt">г. Москва, ул. Цюрупы, д. 1, стр 6</div>
+                </div>
+                <div class="contacts__address-w">
+                  <div class="contacts__address">Время работы:</div>
+                  <div class="contacts__address-txt">Ежедневно и круглосуточно</div>
+                </div>
+                <div class="contacts__address-w">
+                  <div class="contacts__address">Адрес электронной почты:</div>
+                  <a href="mailto:info@remial.ru" class="contacts__mail">info@remial.ru</a>
+                </div>
+              </div>
+              <a href="" class="call-taxi">Вызвать такси</a>
+            </div>                
+          </div>
+        </div>
+      </div>
+
+      <section class="section s-get">
+        <div class="contain tabs get__tabs">
+          <div class="h2__w">
+            <div class="get__h-w">
+              <h2>Как добраться</h2>
+            </div>
+
+            <ul class="get-tabs__list tabs__list">
+              <li class="tabs__list-item active">Пешком/Общественный транспорт</li>  
+              <li class="tabs__list-item">На автомобиле</li>  
+            </ul>
+
+          </div>
+          <div class="get__w">
+            <div class="get__l">              
+              <ul class="tabs__content-list">
+                <li class="tabs__content-list-item active">
+                  <div class="get__ul-w">
+                    <ul>                      
+                      <li>Пройти прямо, магазин Азбука Вкуса должен остаться по правую руку, далее следовать
+                      до светофора, не переходя дорогу, повернуть направо, идти прямо приблизительно 100 метров. </li>
+                      <li>Медицинский центр Ремиаль располагается во дворе, сразу за магазином «Ароматный
+                      мир».</li>
+                      <li>Медицинский центр Ремиаль располагается во дворе, сразу за магазином «Ароматный
+                      мир».</li>
+                    </ul>
+                  </div>
+                  <a href="" class="btn-o">Открыть маршрут в навигаторе</a>      
+                </li><!--tabs__content-list-item-->
+                <li class="tabs__content-list-item">
+                  <div class="get__ul-w">
+                    <ul>
+                      <li>                        
+                        Станция метро Таганская радиальная. Первый вагон из центра. Из дверей метро
+                      налево, из перехода еще раз налево. </li>
+                      <li>Пройти прямо, магазин Азбука Вкуса должен остаться по правую руку, далее следовать
+                      до светофора, не переходя дорогу, повернуть направо, идти прямо приблизительно 100 метров. </li>
+                      <li>Медицинский центр Ремиаль располагается во дворе, сразу за магазином «Ароматный
+                      мир».</li>
+                      <li>Медицинский центр Ремиаль располагается во дворе, сразу за магазином «Ароматный
+                      мир».</li>
+                    </ul>
+                  </div>
+                  <a href="" class="btn-o">Открыть маршрут в навигаторе</a> 
+                </li><!--tabs__content-list-item-->
+              </ul>
+            </div>
+            <div class="get__r">
+              <div class="get-img__sl">
+                <a data-fancybox="get-sl" href="./img/get.jpg"><img src="./img/get.jpg"></a>
+                <a data-fancybox="get-sl" href="./img/get.jpg"><img src="./img/get.jpg"></a>
+                <a data-fancybox="get-sl" href="./img/get.jpg"><img src="./img/get.jpg"></a>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="section s-sform">
         <div class="contain">
@@ -157,25 +250,26 @@
       <img src="img/form-human.png">
     </div>
   </div>
-</div> 
+</div>         
         </div>
       </section>
-      <section class="s-smap">
-  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f321a313133929996b6db5fe7565d7b1b6db4487dcc19921cf159f764772525&amp;width=100%25&amp;height=100%5&amp;lang=ru_RU&amp;scroll=false"></script>
-  <div class="smap__wrapper">
-    <div class="contain">
-      <div class="smap__inn">
-        <div class="smap-contacts">
-          <div class="smap-contacts__title">Телефон для связи</div>
-          <div class="fc__info">
-            <p>Круглосуточно. Анонимно</p>
-            <a href="tel:" class="fc__info-tel">8 (495) 540-57-86</a>
-          </div><a href="" class="btn-o">Запись на прием</a>
+
+
+      <section class="s-org-det">
+        <div class="contain">
+          <h2>Реквизиты организации</h2>
+          <ul>
+            <li>Полное наименование: Общество с ограниченной ответственностью «Медицинский центр «Ремиаль»</li>
+            <li>Адрес: г. Москва, ул. Цюрупы, д. 1, стр 6</li>
+            <li>Полное наименование: Общество с ограниченной ответственностью «Медицинский центр «Ремиаль»</li>
+            <li>ОГРН: 1027700045515</li>
+            <li>ИНН: 7729319101</li>
+            <li>КПП: 772901001</li>
+            <li>ОКПО: 42866245</li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
+
     </main>
     <footer class="footer">
   <div class="contain">
