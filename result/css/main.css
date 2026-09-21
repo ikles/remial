@@ -798,6 +798,8 @@ input[type="text"]:focus {
     .vid__prices {
       gap: 10px;
       margin-top: 20px; } }
+  .vid__prices .promo-item__date {
+    margin-bottom: 0; }
 
 .vid-go,
 .vid-price {
@@ -2662,6 +2664,8 @@ input[type="text"]:focus {
   line-height: 2.01;
   color: #000;
   margin-bottom: 45px; }
+  .content p:last-of-type {
+    margin-bottom: 40px; }
 
 .content h1 {
   font-weight: 700;
@@ -3898,6 +3902,19 @@ ul.docs__list {
       height: 51px; }
     .distr__w a:hover {
       text-decoration: none; }
+
+.vid__p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2.01;
+  color: #000;
+  max-width: 730px; }
+
+.promo-ful__info {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 2.01;
+  color: #000; }
 
 @media (max-width: 1679px) {
   .wrapper {

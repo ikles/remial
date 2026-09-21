@@ -586,6 +586,10 @@ input[type="text"] {
     gap: 10px;
     margin-top: 20px;
   }
+
+  .promo-item__date {
+    margin-bottom: 0;
+  }
 }
 
 .vid-go,
@@ -2881,7 +2885,10 @@ input[type="text"] {
     font-size: 20px;
     line-height: 2.01;
     color: #000;
-    margin-bottom: 45px;
+    margin-bottom: 45px;    
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 
   h1 {
@@ -4439,8 +4446,20 @@ ul.docs__list {
   }
 }
 
+.vid__p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2.01;
+  color: #000;
+  max-width: 730px;
+}
 
-
+.promo-ful__info {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 2.01;
+  color: #000;
+}
 
 //2000
 

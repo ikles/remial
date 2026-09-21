@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6. Акция</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main main-lanidig">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="#">Главная</a></li>            
+            <li><a href="">Акции</a></li>            
+            <li>Скидка 20% участникам СВО, родственникам и военным пенсионерам СВО</li>            
+          </ul>
+        </div>
+      </div>
+
+      <section class="vid">
+        <div class="lcpadding">
+          <div class="vid__w">
+            <div class="vid__l">
+              <h1>Скидка 20% участникам СВО, родственникам и военным пенсионерам СВО</h1>
+
+              <p class="vid__p">Проблема злоупотребления спиртного в России затронула практически каждую семью. По некоторым данным, более 1 миллиона человек в РФ имеют диагноз зависимости от алкоголизма. Неофициальные цифры значительно выше. </p>
+              
+              <div class="vid__prices">
+                <div class="doctor__fist-free">20% скидка</div>
+                <div class="promo-item__date">Акция до: 31 августа 2026</div>
+              </div>
+              <div class="vid__btn-w">
+                <a href="tel:8 (495) 859-42-61" class="btn vid__btn-call js-calldoc2">Записаться на прием</a>                
+              </div>
+            </div>
+            <div class="vid__r">
+              <img src="./img/promo-b.jpg" class="vid__r-img">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section s-promo-ful">
+        <div class="contain">
+          <div class="content">
+            <h2>С заботой о защитниках нашей Родины!</h2>
+            <p>Проблема злоупотребления спиртного в России затронула практически каждую семью. По некоторым данным, более 1 миллиона человек в РФ имеют диагноз зависимости от алкоголизма. Неофициальные цифры значительно выше. Но по-прежнему, обращения за помощью происходят редко и чаще на запущенных стадиях алкоголизма, когда имеются долговременные либо хронические последствия для здоровья. 
+            Учитывая все факторы, которые отталкивают пациентов от получения наркологической помощи, клиника Ремиаль выстроила процесс лечения алкоголизма в Москве в соответствии с современными и научными достижениями, но при этом в комфортных для пациента условиях. Помощь оказывается индивидуально, конфиденциально и приносит больше, чем трезвость.</p>
+            <div class="promo-ful__info">Чтобы получить скидку, военнослужащему необходимо предоставить документ, подтверждающий его статус.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section s-promo">
+        <div class="contain">
+          <div class="h2__w">
+            <h2>Другие акции</h2>
+            <a href="" class="all-more">Все акции</a>            
+          </div>        
+          <div class="promo__row">
+            @@include('var/_promo__item.html',{
+              "img":"img/promo-1.jpg",
+              "title":"Дарим скидку 15% на детокс-капельницу вам, вашим близким и друзьям!",
+              "date":"Акция до: 31 августа 2026"
+            })
+            @@include('var/_promo__item.html',{
+              "img":"img/promo-2.jpg",
+              "title":"Дарим скидку 15% на детокс-капельницу вам, вашим близким и друзьям!",
+              "date":"Акция до: 31 августа 2026"
+            })
+          </div>
+        </div>
+      </section>
+
+      @@include('var/_s-smap.html')
+
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
