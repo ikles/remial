@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8. Цены</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/select2.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+  <div class="top">
+    <div class="show-1199">
+      <div class="top__line">
+        <div class="contain">
+          <div class="top__line-w">
+            <div class="top-line__week">24/7</div>
+            <!-- <a href="tel:8 (495) 065-70-02" class="top-line__tel">8 (495) 065-70-02</a> -->
+            <div class="top-line__txt">Наркологическая клиника</div>
+            <div class="top-line__geo">г. Москва, ул. Цюрупы, д. 1, стр 6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contain">
+      <div class="top__row">
+        <a href="./index.html" class="head__logo">
+          <img src="./img/logo-head-svg.svg">
+        </a>
+        <div class="show-1199 top-line__tel2-w">
+          <a href="tel:8 (495) 927-68-72" class="top-line__tel2">8 (495) 927-68-72</a>
+          <span>Круглосуточно. Анонимно</span>
+        </div>
+        <div class="head__conts">
+          <div class="head__phone-w">
+            <div class="head__phone-txt">Круглосуточно. Анонимно</div>
+            <a href="tel:8 (495) 927-68-72" class="head__conts-phone">8 (495) 927-68-72</a>
+          </div>
+          <div class="head__conts-addres">
+            <div class="head__addres">
+              г. Москва, <br> ул. Цюрупы, д. 1, стр. 6                </div>
+            </div>
+          </div>
+          <div class="head__r">
+              <!-- <div class="head__socs">
+                <a href="#"><img src="https://narkologia-remial.ru/wp-content/themes/remial/img/soc-h-1.svg"></a>
+                <a href=""><img src="https://narkologia-remial.ru/wp-content/themes/remial/img/soc-h-2.svg"></a>
+              </div> -->
+              
+              <div class="head__btn-w" data-da=",.header__col--contain,1199,0">
+                <a href="" class="btn-o btn__rec js-call">Запись на прием</a>
+                <a href="" class="btn btn__call js-calldoc">Вызвать нарколога</a>
+              </div></div>
+              <div class="burger-w">
+                <span class="burger"></span>
+              </div>
+            </div>
+          </div>
+        </div><!--top-->
+        <div class="header__col">
+          <div class="top-mnu__scroll">
+            <div class="top__mnu">
+              <div class="header__col--contain contain">
+                <div class="mn__ul">
+                  <ul id="menu-verxne-menyu" class="menu"><li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="https://narkologia-remial.ru/narkolog-na-dom/">Нарколог на дом</a></li>
+                    <li id="menu-item-278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-278"><a href="https://narkologia-remial.ru/vyvod-iz-zapoya/">Вывод из запоя</a></li>
+                    <li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="https://narkologia-remial.ru/kapelnica-ot-zapoya-i-poxmelya/">Капельница от запоя и похмелья</a></li>
+                    <li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="https://narkologia-remial.ru/lechenie-alkogolizma/">Лечение алкоголизма</a></li>
+                    <li id="menu-item-279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-279"><a href="https://narkologia-remial.ru/lechenie-narkomanii-narkoticheskoj-zavisimosti/">Лечение наркомании</a></li>
+                  </ul>              </div>
+                </div>
+              </div>
+              <div class="header__col--show-1199 show-1199 contain">
+
+                <div class="mnu-mob__item">
+                  <p>Адрес:</p>
+                  <span>
+                    г. Москва, <br> ул. Цюрупы, д. 1, стр. 6              </span>
+                  </div>
+                  <div class="mnu-mob__item">
+                    <p>Телефон:</p>
+                    <a href="tel:8 (495) 927-68-72">8 (495) 927-68-72</a>
+                  </div>
+                  <div class="mnu-mob__item">
+                    <p>Время работы:</p>
+                    <span>
+                      Круглосуточно. Анонимно
+                    </span>
+                  </div>
+
+            <!-- <div class="head__socs-2">
+              <a href="#"><img src="https://narkologia-remial.ru/wp-content/themes/remial/img/soc-h-1.svg"></a>
+              <a href=""><img src="https://narkologia-remial.ru/wp-content/themes/remial/img/soc-h-2.svg"></a>
+            </div> -->
+          </div>
+        </div>
+      </div><!--header__col-->
+    </header>    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="#">Главная</a></li>            
+            <li>Цены</li>            
+          </ul>
+        </div>
+      </div>
+
+      
+      
+      <div class="news-list__page">
+
+        <section class="s-about">
+          <div class="contain">
+            <h1>Цены</h1>
+            <div class="about__w">
+              <div class="col__l">
+                <div class="about__l">                
+                  <ul class="about__ul">
+                    <li><a class="active" href="">Консультации врачей</a></li>
+                    <li><a href="">Вывод из запоя</a></li>
+                    <li><a href="">Капельницы</a></li>
+                    <li><a href="">Кодирование от алкоголизма</a></li>
+                    <li><a href="">Лечение алкоголизма</a></li>
+                    <li><a href="">Лечение наркомании</a></li>
+                    <li><a href="">Лечение никотиновой зависимости</a></li>
+                    <li><a href="">Лечение в стационаре</a></li>
+                  </ul>                
+                </div>
+              </div><!--col__l-->
+              <div class="col__r">
+                <section class="price-page__block">
+                  <h2>Консультации врачей</h2>
+                  <div class="servi-pric__w">
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__free">Бесплатно</div>
+      <div class="servi-pric__price"><s>8 500 ₽</s></div>
+      <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+</div>
+                </section>
+                <section class="price-page__block">
+                  <h2>Вывод из запоя</h2>
+                  <div class="servi-pric__w">
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">      
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+</div>
+                </section>
+                <section class="price-page__block">
+                  <h2>Капельницы</h2>
+                  <div class="servi-pric__w">
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">      
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+</div>
+                </section>
+                <section class="price-page__block">
+                  <h2>Кодирование от алкоголизма</h2>
+                  <div class="servi-pric__w">
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">      
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+</div>
+                </section>
+                <section class="price-page__block">
+                  <h2>Лечение алкоголизма</h2>
+                  <div class="servi-pric__w">
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">      
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+</div>
+                </section>
+                <section class="price-page__block">
+                  <h2>Лечение наркомании</h2>
+                  <div class="servi-pric__w">
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">      
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+</div>
+                </section>
+                <section class="price-page__block">
+                  <h2>Лечение никотиновой зависимости</h2>
+                  <div class="servi-pric__w">
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">      
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+</div>
+                </section>
+                <section class="price-page__block">
+                  <h2>Лечение в стационаре</h2>
+                  <div class="servi-pric__w">
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">      
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+  <div class="servi-pric__row">
+    <div class="servi-pric__l">
+      <div class="servi-pric__name">Вызов терапевта в офис</div>
+      <div class="servi-pric__txt">Небольшое описание данной услуги в 3-6 слов</div>
+    </div>
+    <div class="servi-pric__r">
+      <div class="servi-pric__price">8 500 ₽</div> <a href="" class="btn-o">Заказать</a>
+    </div>
+  </div>
+</div>
+                </section>
+              </div><!--col__r-->
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="s-smap">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f321a313133929996b6db5fe7565d7b1b6db4487dcc19921cf159f764772525&amp;width=100%25&amp;height=100%5&amp;lang=ru_RU&amp;scroll=false"></script>
+  <div class="smap__wrapper">
+    <div class="contain">
+      <div class="smap__inn">
+        <div class="smap-contacts">
+          <div class="smap-contacts__title">Телефон для связи</div>
+          <div class="fc__info">
+            <p>Круглосуточно. Анонимно</p>
+            <a href="tel:" class="fc__info-tel">8 (495) 540-57-86</a>
+          </div><a href="" class="btn-o">Запись на прием</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="contain">
+    <div class="f-row__1">
+      <div class="show-991 foot__title-pda">Телефон для сявзи</div>
+      <div class="f-col f-col--1">
+        <a href="https://narkologia-remial.ru" class="f-logo"><img src="https://narkologia-remial.ru/wp-content/themes/remial/img/f-logo.svg"></a>
+      </div>
+      <div class="f-col f-col--2">
+        <div class="f__info">
+          <p class="f__info-p">Круглосуточно. Анонимно</p>
+          <a href="tel:8 (495) 065-70-02" class="f__info-tel">8 (495) 065-70-02</a>
+        </div>
+      </div>
+      <div class="f-col f-col--3">
+        <div class="f__info-adress">г. Москва, <br> ул. Цюрупы, д. 1, стр. 6</div>
+      </div>
+      <div class="f-col f-col--4">
+        <div class="show-991">
+          <a href="" class="btn-o btn-100 js-call">Запись на прием</a>
+        </div>
+        <a href="" class="btn btn-100 js-calldoc">Вызвать нарколога</a>
+      </div>
+    </div>
+    <div class="f-row__2">
+      <div class="f-col f2-col--1">
+        <div class="m-mnu__item">
+          <div class="m-mnu__title">Услуги</div>
+          <ul id="menu-nizhnee-menyu-1" class="menu"><li id="menu-item-293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-293"><a href="https://narkologia-remial.ru/vyvod-iz-zapoya/">Вывод из запоя</a></li>
+<li id="menu-item-298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a href="https://narkologia-remial.ru/kapelnica-ot-zapoya-i-poxmelya/">Капельница от запоя и похмелья</a></li>
+<li id="menu-item-299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="https://narkologia-remial.ru/lechenie-alkogolizma/">Лечение алкоголизма</a></li>
+</ul>          <!-- <ul>
+              <li><a href="">Капельницы от запоя и похмелья</a></li>
+              <li><a href="">Кодирование от алкоголизма</a></li>
+              <li><a href="">Лечение наркомании</a></li>
+            </ul> -->
+        </div>
+      </div>
+      <div class="f-col f2-col--2">
+        <div class="m-mnu__item" data-da=",.f2-col--1,991,1">
+          <div class="m-mnu__title"></div>
+          <ul id="menu-nizhnee-menyu-2" class="menu"><li id="menu-item-295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-295"><a href="https://narkologia-remial.ru/lechenie-narkomanii-narkoticheskoj-zavisimosti/">Лечение наркомании</a></li>
+<li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="https://narkologia-remial.ru/narkolog-na-dom/">Нарколог на дом</a></li>
+<li id="menu-item-315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-315"><a href="https://narkologia-remial.ru/politika-po-obrabotke-personalnyx-dannyx/">Политика по обработке персональных данных</a></li>
+</ul>          <!-- <ul>
+              <li><a href="">Лечение алкоголизма</a></li>
+              <li><a href="">Вывод из запоя</a></li>
+              <li><a href="">Нарколог на дом</a></li>
+            </ul> -->
+        </div>
+      </div>
+      <div class="f-col f2-col--3">
+        <div class="m-mnu__title"></div>
+        <p class="f-lic">Регистрационный номер лицензии <br> № ЛО41-01137-77/06156692</p>
+        <p class="f-lic">ИНН 9727131387</p>
+      </div>
+      <div class="f-col f2-col--4">
+        <div class="m-mnu__title">Контакты и связь</div>
+        <a href="tel:8 (495) 065-70-02" class="f-tel">8 (495) 065-70-02</a>
+        <div class="f__works">Режим работы клиники:&nbsp;<strong>круглосуточно</strong></div>
+        <!-- <ul class="soc__ul" data-da=",.f-col--2,991,1">
+          <li><a href="#"><img src="https://narkologia-remial.ru/wp-content/themes/remial/img/ftg.svg"></a></li>
+          <li><a href="#"><img src="https://narkologia-remial.ru/wp-content/themes/remial/img/fmax.svg"></a></li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="contain">
+      <div class="copyright__text">Имеются противопоказания. Необходимо проконсультироваться со специалистом</div>
+      <div class="copyright__bottom">
+        <div class="copy">© Ремиаль 2026. Все права защищены</div>
+        <div class="dev">Cайт разработан - <a href="https://medipromo.ru" target="_blank">medipromo.ru</a></div>
+      </div>
+    </div>
+  </div>
+</footer>    
+  </div>
+<!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/dynamic_adapt.js"></script>
+
+  <div class="modal-overlay modal-overlay_1">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block">     
+      <span class="modal-close modal-close_1"></span>
+      <div class="modal-form__inner">
+        <div class="h3 center">Запись на приём</div>
+        <form>
+          <input type="text" placeholder="Ваше имя" />
+          <input class="tel" type="text" placeholder="+7(___)___-__-__" />
+          <textarea placeholder="Ваш комментарий"></textarea>
+          <input type="submit" value="Записаться на приём" />          
+        </form>
+        <p class="modal-accept">Нажимая на кнопку “Записаться на приём” , Вы подтверждаете, что ознакомлены с <a href="">Политикой конфиденциальности</a></p>
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+  <div class="modal-overlay modal-overlay_2">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block">     
+      <span class="modal-close modal-close_2"></span>
+      <div class="modal-form__inner">
+        <div class="h3 center">Вызвать нарколога на дом</div>
+        <form>
+          <input type="text" placeholder="Ваше имя" />
+          <input class="tel" type="text" placeholder="+7(___)___-__-__" />
+          <textarea placeholder="Ваш комментарий"></textarea>
+          <input type="submit" value="Вызвать нарколога" />          
+        </form>
+        <p class="modal-accept">Нажимая на кнопку “Записаться на приём” , Вы подтверждаете, что ознакомлены с <a href="">Политикой конфиденциальности</a></p>
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+
+  <div class="modal-overlay modal-overlay_3">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block">     
+      <span class="modal-close modal-close_3"></span>
+      <div class="modal-form__inner">
+        <div class="h3 center">Блогадарим за запись!
+          Мы свяжемся с Вами
+         в ближайшее время</div>        
+        <a href="" class="thanks-modal__btn btn">Вернуться на главную</a>
+      </div>
+    </div>
+</div><!--modal-overlay-->
+
+<div class="show-640">
+  <div class="bottom__fix">
+    <a class="" href="tel:8 (495) 065-70-02">
+      <img src="https://narkologia-remial.ru/wp-content/themes/remial/img/bootom-tel.svg" alt="">
+      <span>Позвонить нам</span>
+    </a>
+    <a class="js-tel" href="8 (495) 065-70-02">
+      <img src="https://narkologia-remial.ru/wp-content/themes/remial/img/bootom-call.svg" alt="">
+      <span>Заказать звонок</span>
+    </a>
+    <a class="js-calldoc" href="8 (495) 065-70-02">
+      <img src="https://narkologia-remial.ru/wp-content/themes/remial/img/bootom-calldoc.svg" alt="">
+      <span>Вызвать на дом</span>
+    </a>
+  </div>
+</div>
+</body>
+</html>
+

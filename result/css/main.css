@@ -3001,7 +3001,8 @@ input[type="text"]:focus {
       font-size: 20px;
       color: #121820;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      line-height: 1.4; }
       .about__l ul li a:before {
         content: "";
         flex: none;
@@ -3317,8 +3318,7 @@ ul.docs__list {
   margin-bottom: 46px;
   font-weight: 700;
   font-size: 50px;
-  line-height: 1.2;
-  color: var(--#000000); }
+  line-height: 1.2; }
 
 .news-blog__list {
   display: grid;
@@ -4124,6 +4124,16 @@ ul.docs__list {
       font-size: 20px;
       line-height: 2;
       color: black; }
+
+.price-page__block + .price-page__block {
+  margin-top: 70px; }
+
+.price-page__block .h2,
+.price-page__block h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 29px; }
 
 @media (max-width: 1679px) {
   .wrapper {

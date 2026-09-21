@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8. Цены</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="#">Главная</a></li>            
+            <li>Цены</li>            
+          </ul>
+        </div>
+      </div>
+
+      
+      
+      <div class="news-list__page">
+
+        <section class="s-about">
+          <div class="contain">
+            <h1>Цены</h1>
+            <div class="about__w">
+              <div class="col__l">
+                <div class="about__l">                
+                  <ul class="about__ul">
+                    <li><a class="active" href="">Консультации врачей</a></li>
+                    <li><a href="">Вывод из запоя</a></li>
+                    <li><a href="">Капельницы</a></li>
+                    <li><a href="">Кодирование от алкоголизма</a></li>
+                    <li><a href="">Лечение алкоголизма</a></li>
+                    <li><a href="">Лечение наркомании</a></li>
+                    <li><a href="">Лечение никотиновой зависимости</a></li>
+                    <li><a href="">Лечение в стационаре</a></li>
+                  </ul>                
+                </div>
+              </div><!--col__l-->
+              <div class="col__r">
+                <section class="price-page__block">
+                  <h2>Консультации врачей</h2>
+                  @@include('var/_servi-pric__w.html')
+                </section>
+                <section class="price-page__block">
+                  <h2>Вывод из запоя</h2>
+                  @@include('var/_servi-pric__w2.html')
+                </section>
+                <section class="price-page__block">
+                  <h2>Капельницы</h2>
+                  @@include('var/_servi-pric__w2.html')
+                </section>
+                <section class="price-page__block">
+                  <h2>Кодирование от алкоголизма</h2>
+                  @@include('var/_servi-pric__w2.html')
+                </section>
+                <section class="price-page__block">
+                  <h2>Лечение алкоголизма</h2>
+                  @@include('var/_servi-pric__w2.html')
+                </section>
+                <section class="price-page__block">
+                  <h2>Лечение наркомании</h2>
+                  @@include('var/_servi-pric__w2.html')
+                </section>
+                <section class="price-page__block">
+                  <h2>Лечение никотиновой зависимости</h2>
+                  @@include('var/_servi-pric__w2.html')
+                </section>
+                <section class="price-page__block">
+                  <h2>Лечение в стационаре</h2>
+                  @@include('var/_servi-pric__w2.html')
+                </section>
+              </div><!--col__r-->
+            </div>
+          </div>
+        </section>
+      </div>
+
+      @@include('var/_s-smap.html')
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

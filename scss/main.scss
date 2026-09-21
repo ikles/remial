@@ -3301,6 +3301,7 @@ input[type="text"] {
         color: #121820;        
         display: flex;
         align-items: center;
+        line-height: 1.4;
         &:before {
           content: "";
           flex: none;
@@ -3711,8 +3712,7 @@ ul.docs__list {
     margin-bottom: 46px;
     font-weight: 700;
     font-size: 50px;
-    line-height: 1.2;
-    color: var(--black);
+    line-height: 1.2;    
   }
 }
 
@@ -4731,7 +4731,18 @@ ul.docs__list {
   }
 }
 
-
+.price-page__block {
+  + .price-page__block {
+    margin-top: 70px;
+  }
+  .h2,
+  h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;    
+    margin-bottom: 29px;
+  }
+}
 
 //2000
 
