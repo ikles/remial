@@ -1698,6 +1698,14 @@ input[type="text"] {
   margin-bottom: 26px;
 }
 
+.how-contacts__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 19px;
+}
+
 .how-contacts__info {
   margin-bottom: 30px;
   p {
@@ -1714,8 +1722,10 @@ input[type="text"] {
   font-size: 32px;
   line-height: 0.9;
   color: rgb(255, 255, 255);
+  &:hover {
+    text-decoration: none;
+  }
 }
-
 
 .when__row {
   display: grid;
@@ -4908,9 +4918,45 @@ ul.docs__list {
 }
 
 
+.search__wrap {
+  max-width: 1090px;
+  width: 100%;
+}
 
-.interest__btn {
-  
+.serch__w {  
+  margin-bottom: 50px;
+  form {
+    width: 100%;        
+    border: 1px solid rgb(141, 166, 214);
+    border-radius: 18px;
+    display: flex;    
+    align-items: center;
+    input[type="tel"],
+    input[type="password"],
+    input[type="text"] {
+      border: none;
+      background: none;      
+      flex-grow: 1;
+      height: 60px;
+      font-size: 18px;
+      color: rgb(139, 144, 151);
+      padding-left: 30px;      
+      &:focus {
+        outline: none;
+      }
+    }
+    input[type="submit"],
+    button {      
+      flex: none;
+      height: 60px;
+      width: 60px;
+      background-image: url("../img/serch-2.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      font-size: 0;
+    }    
+  }
+
 }
 
 //2000

@@ -1722,6 +1722,13 @@ input[type="text"]:focus {
   color: white;
   margin-bottom: 26px; }
 
+.how-contacts__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 19px; }
+
 .how-contacts__info {
   margin-bottom: 30px; }
   .how-contacts__info p {
@@ -1736,6 +1743,8 @@ input[type="text"]:focus {
   font-size: 32px;
   line-height: 0.9;
   color: white; }
+  .how-contacts__info-tel:hover {
+    text-decoration: none; }
 
 .when__row {
   display: grid;
@@ -4271,6 +4280,42 @@ ul.docs__list {
   color: white;
   line-height: 1.4;
   margin-bottom: 4px; }
+
+.search__wrap {
+  max-width: 1090px;
+  width: 100%; }
+
+.serch__w {
+  margin-bottom: 50px; }
+  .serch__w form {
+    width: 100%;
+    border: 1px solid #8da6d6;
+    border-radius: 18px;
+    display: flex;
+    align-items: center; }
+    .serch__w form input[type="tel"],
+    .serch__w form input[type="password"],
+    .serch__w form input[type="text"] {
+      border: none;
+      background: none;
+      flex-grow: 1;
+      height: 60px;
+      font-size: 18px;
+      color: #8b9097;
+      padding-left: 30px; }
+      .serch__w form input[type="tel"]:focus,
+      .serch__w form input[type="password"]:focus,
+      .serch__w form input[type="text"]:focus {
+        outline: none; }
+    .serch__w form input[type="submit"],
+    .serch__w form button {
+      flex: none;
+      height: 60px;
+      width: 60px;
+      background-image: url("../img/serch-2.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      font-size: 0; }
 
 @media (max-width: 1679px) {
   .wrapper {
