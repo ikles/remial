@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>21. О клинике</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main main-lanidig main-about">
+
+      <section class="vid">
+        <div class="lcpadding">
+          <div class="vid__w">
+            <div class="vid__l">
+              <h1>Наркологическая клиника “Ремиаль” в Москве</h1>
+              <div class="about-vid__desc">
+                <p>Обращение за наркологической помощью — это шаг, который человек делает в сложный период своей жизни. Мы делаем все, чтобы этот шаг был максимально безопасным и комфортным. В частном наркологическом центре «Ремиаль» в Москве помощь доступна круглосуточно. Врачи-психиатры-наркологи работают в стационаре, принимают в клинике и выезжают на дом. Здесь лечат алкогольную и наркотическую зависимость, проводят детоксикацию и кодирование, выводят из запоя и снимают абстиненцию.</p>
+                <p>Решение о методах помощи врач принимает только после осмотра. Клиника имеет лицензию на медицинскую деятельность, информация о пациентах защищена врачебной тайной.</p>
+              </div>
+
+            </div>
+            <div class="vid__r">
+              <img src="./img/about-b.jpg" class="vid__r-img">
+
+            </div>
+          </div>
+        </div>
+      </section>      
+      @@include('var/_s-advants.html')
+      <section class="section s-why">
+        <div class="contain">
+          <h2>Почему выбирают наркологическую клинику «Ремиаль»</h2>
+          @@include('var/_why__row.html')
+        </div>
+      </section>
+      <section class="section s-content content">
+        <div class="contain">          
+          <h2>Заголовок</h2>
+          <p>Обращение за наркологической помощью — это шаг, который человек делает в сложный период своей жизни. Мы делаем все, чтобы этот шаг был максимально безопасным и комфортным. В частном наркологическом центре «Ремиаль» в Москве помощь доступна круглосуточно. Врачи-психиатры-наркологи работают в стационаре, принимают в клинике и выезжают на дом. Здесь лечат алкогольную и наркотическую зависимость, проводят детоксикацию и кодирование, выводят из запоя и снимают абстиненцию.</p>
+          <p>Решение о методах помощи врач принимает только после осмотра. Клиника имеет лицензию на медицинскую деятельность, информация о пациентах защищена врачебной тайной.</p>
+        </div>
+      </section>
+
+      <section class="section s-gal">
+        <div class="contain">          
+          <h2>Фотографии клиники</h2>
+        </div>
+        @@include('var/_gal__wrap.html')
+      </section>
+      
+
+      
+      <section class="section s-how">
+        <div class="contain">
+          <h2 class="center">Как мы работаем</h2>
+          <div class="subtitle">В наркологической клинике «Ремиаль» лечение проходит по отработанной схеме. Она включает осмотр, подбор терапии, контроль
+            состояния и поддержку после лечения.
+          </div>
+          <div class="how__list">
+            <div class="how__item">
+              <div class="how__img"><img src="img/how-1.jpg"></div>
+              <div class="how__title">Обращение</div>
+              <div class="how__text">Пациент или родственник звонит в клинику или оставляет заявку на сайте. Оператор уточняет состояние и адрес для выезда,
+                передает данные врачу.
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__img"><img src="img/how-2.jpg"></div>
+              <div class="how__title">Осмотр</div>
+              <div class="how__text">Врач-психиатр-нарколог выезжает на дом или принимает пациента в клинике. Проводит осмотр, измеряет давление и пульс,
+                уточняет длительность употребления, хронические заболевания, аллергии и принимаемые препараты. Это позволяет выявить
+                противопоказания и оценить риски.
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__img"><img src="img/how-3.jpg"></div>
+              <div class="how__title">Назначение терапии</div>
+              <div class="how__text">После осмотра врач определяет метод лечения и состав препаратов. Объясняет пациенту, как будет проходить процедура
+                и зачем нужны назначения. Затем проводит инфузионную терапию, кодирование или другие виды лечения по показаниям.
+                Препараты подбираются индивидуально.
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__img"><img src="img/how-4.jpg"></div>
+              <div class="how__title">Наблюдение и контроль</div>
+              <div class="how__text">После вмешательства врач оценивает состояние: измеряет давление, пульс, спрашивает о самочувствии. Дает рекомендации
+                на ближайшие дни. При необходимости назначает повторный выезд или госпитализацию для круглосуточного наблюдения.
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__img"><img src="img/how-5.jpg"></div>
+              <div class="how__title">Поддержка после лечения</div>
+              <div class="how__text">Врачи остаются на связи после завершения основной терапии: отвечают на вопросы, при необходимости корректируют рекомендации.
+              Это помогает пациенту сохранить результат и чувствовать себя увереннее.</div>
+            </div>
+            <div class="how-contacts">
+              <div class="how-contacts__title">Звоните или закажите обратный звонок, мы вам перезвоним</div>
+              <div class="how-contacts__info">
+                <p>Круглосуточно. Анонимно
+                </p>
+                <a href="tel:" class="how-contacts__info-tel">8 (495) 540-57-86</a>
+              </div>
+              <form>
+                <input type="text" placeholder="+7(___)___-__-__">
+                <input type="submit" value="Заказать звонок">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section s-faq">
+        <div class="contain">
+          <h2 class="center">Часто задаваемые вопросы</h2>
+          <div class="faq__accordion-container accordion-container"> 
+            <div class="accordion-item">
+              <div class="accordion-header">Можно ли вызвать врача анонимно?</div>
+              <div class="accordion-content">
+                Врач может провести детоксикацию, медикаментозное лечение, психологическую поддержку и подготовку к реабилитации. Мы предлагаем различные решения для борьбы с зависимостью.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">Как быстро может приехать бригада после вызова?</div>
+              <div class="accordion-content">
+                Врач может провести детоксикацию, медикаментозное лечение, психологическую поддержку и подготовку к реабилитации. Мы предлагаем различные решения для борьбы с зависимостью.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">Какие услуги предоставляет нарколог на дому?</div>
+              <div class="accordion-content">
+                Врач может провести детоксикацию, медикаментозное лечение, психологическую поддержку и подготовку к реабилитации. Мы предлагаем различные решения для борьбы с зависимостью.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section s-lic">
+        <div class="contain">
+          <h2 class="center">Лицензии</h2>
+          @@include('var/_lic-sl.html')
+        </div>
+      </section>
+      @@include('var/_s-smap.html')
+
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

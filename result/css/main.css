@@ -4394,6 +4394,23 @@ ul.spagin {
       ul.spagin li a.spagin-control.spagin-next:before {
         transform: rotate(180deg); }
 
+.about-vid__desc {
+  max-width: 810px; }
+  .about-vid__desc p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2.01;
+    color: #000;
+    margin-bottom: 39px; }
+    .about-vid__desc p:last-child {
+      margin-bottom: 0; }
+
+.main-about .vid__l {
+  padding-right: 30px; }
+
+.main-about .vid__r {
+  margin-left: 0; }
+
 @media (max-width: 1679px) {
   .wrapper {
     zoom: 0.8; } }

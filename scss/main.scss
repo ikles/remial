@@ -5060,8 +5060,29 @@ ul.spagin {
     }
   }
 }
-.spagin-prev {}
-.active {}
+
+.about-vid__desc {
+  max-width: 810px;
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2.01;
+    color: #000;
+    margin-bottom: 39px;    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.main-about {
+  .vid__l {
+    padding-right: 30px;
+  }
+  .vid__r {
+    margin-left: 0;
+  }
+}//main-about
 
 //2000
 
