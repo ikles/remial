@@ -4744,6 +4744,22 @@ ul.docs__list {
   }
 }
 
+.s-reviews-page {
+  padding-bottom: 115px;
+}
+
+.reviews-page__wrap {
+  display: flex;  
+  flex-direction: column;
+  gap: 70px;
+}
+
+.reviews-page__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
 //2000
 
 

@@ -4135,6 +4135,19 @@ ul.docs__list {
   line-height: 1.2;
   margin-bottom: 29px; }
 
+.s-reviews-page {
+  padding-bottom: 115px; }
+
+.reviews-page__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 70px; }
+
+.reviews-page__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px; }
+
 @media (max-width: 1679px) {
   .wrapper {
     zoom: 0.8; } }
