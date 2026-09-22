@@ -2901,10 +2901,8 @@ img {
   }
 }
 
-
-
 .content {
-  p {
+  > p {
     font-weight: 400;
     font-size: 20px;
     line-height: 2.01;
@@ -2944,6 +2942,22 @@ img {
     color: var(--black);
     margin-bottom: 23px;
   }
+  blockquote {
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    background: #e8edf6;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 2.01;
+    margin: 0;
+    margin-bottom: 50px;
+    color: var(--d9d9d9);    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   ul {
     display: flex;
     gap: 15px;
@@ -2966,6 +2980,36 @@ img {
         margin-right: 10px;
         flex: none;
         margin-top: 6px;
+      }  
+    }
+  }
+  ul.marker {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }  
+    li {
+      display: flex;
+      align-items: flex-start;
+      font-size: 24px;
+      line-height: 1.3;
+      color: #121820;
+      &:before {
+        content: "";
+        flex: none;
+        display: block;
+        background: none;              
+        background-image: url(../img/vid-check.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 32px;
+        height: 32px;        
+        background-size: 100%;
+        display: inline-flex;
+        margin-right: 20px;
+        margin-top: 0;
       }  
     }
   }
@@ -4181,6 +4225,9 @@ ul.docs__list {
 
 
 .plus-minus {
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 
 .plus-minus__top {
@@ -5382,7 +5429,7 @@ ul.spagin {
 }
 
 .content-content {
-  img {
+  > img {
    border-radius: 24px;
    width: 100%;
    max-width: 100%;
@@ -5390,6 +5437,15 @@ ul.spagin {
    object-fit: cover;
    margin-bottom: 40px;
  }
+}
+
+.s-sform__nobg {
+  border-radius: 36px 36px 140px 36px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  .s-sform__content {
+
+  }
 }
 
 //2000
