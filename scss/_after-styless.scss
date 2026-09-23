@@ -204,6 +204,12 @@
   .mn__ul ul li a {
     font-size: 14px;
   }
+  .mn__ul ul {
+    gap: 15px;
+  }
+  .mn__ul ul li.has-child i.mnu-arrow {
+    top: -1px;
+  }
 }//1365
 
 @media (min-width: 1200px) and (max-width: 1365px) {
@@ -446,7 +452,7 @@
   .gal-sl .slick-slide.slick-center .gal-sl__slide::before {
     width: 100%;
     height: 100%;
-    opacity: 1;
+    
   }
   .s-sform__bg {
     margin-top: 0;
@@ -676,6 +682,24 @@
 .s-doctors-form .s-sform__bg {
   margin-top: 80px;
 }
+.eye {
+  display: none;
+}
+.burger-w {
+  margin-left: 7px;
+}
+.mn__ul ul li.has-child i.mnu-arrow {
+  height: 100%;
+}
+.mn__ul ul {
+  padding-right: 0;
+  li {
+    width: 100%;
+  }
+}
+.top-saerch {
+  display: none;
+}
 }//1199
 
 @media (max-width : 991px) {
@@ -710,6 +734,7 @@
     min-height: 136px;
     border-radius: 16px !important;    
     justify-content: space-between;
+
   }
   .serv__name {
     font-size: 18px;
@@ -1259,7 +1284,7 @@ h2, .h2 {
     border-radius: 80px 16px;
   }
   &:before {
-    opacity: 1;   
+    
     background-color: transparent; 
     background-size: 60px;
   }
@@ -1363,7 +1388,7 @@ h2, .h2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 1;
+    
     background: rgba(#000, 0.3) url("../img/gal-popup-plus.svg") no-repeat center;
     
     background-size: 60px;
@@ -1389,6 +1414,20 @@ h2, .h2 {
 }
 .vid {
   padding-top: 15px;
+}
+.serv__item:before {
+  width: 36px;
+  height: 36px;
+  right: 20px;
+  bottom: 20px;
+  top: auto;
+  -webkit-background-size: 19px;
+       -o-background-size: 19px;
+          background-size: 19px;
+          border-radius: 12px 6px
+}
+.gal-sl__slide:before {
+  background-color: $tr;
 }
 
 }//640
@@ -1459,6 +1498,15 @@ h2, .h2 {
   }
   .promo__more {
     font-size: 14px;
+  }
+  .news-list__page h1 {    
+    margin-bottom: 24px;
+  }
+  .doctors-list {
+    margin-top: -18px;
+  }
+  .doctors-item__bottom {
+    margin-top: 17px;
   }
 }//575
 

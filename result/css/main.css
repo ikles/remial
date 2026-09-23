@@ -432,8 +432,6 @@ h2,
   z-index: 15;
   display: none;
   background: rgba(45, 40, 40, 0.5); }
-  .modal-overlay_4 {
-    display: block; }
 
 .modal-form__layout {
   height: 100%;
@@ -1315,6 +1313,23 @@ input[type="text"]:focus {
     .serv__item:nth-child(5) .serv__price, .serv__item:nth-child(7) .serv__name,
     .serv__item:nth-child(7) .serv__price {
       color: #121820; }
+    .serv__item:nth-child(3):before, .serv__item:nth-child(4):before, .serv__item:nth-child(5):before, .serv__item:nth-child(7):before {
+      background-color: var(--d9d9d9);
+      background-image: url("../img/arr-servs-wh.svg"); }
+  .serv__item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 30px;
+    top: 30px;
+    border-radius: 20px 8px;
+    background: #fff;
+    z-index: 4;
+    background-image: url("../img/arr-servs.svg");
+    background-position: center;
+    background-repeat: no-repeat; }
 
 .serv__item--all {
   font-weight: 700;
@@ -5254,7 +5269,11 @@ form select + .select2-container {
   .vid__w {
     min-height: unset; }
   .mn__ul ul li a {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .mn__ul ul {
+    gap: 15px; }
+  .mn__ul ul li.has-child i.mnu-arrow {
+    top: -1px; } }
 
 @media (min-width: 1200px) and (max-width: 1365px) {
   .head__btn-w .btn, .head__btn-w .modal-form__block form input[type="submit"], .modal-form__block form .head__btn-w input[type="submit"],
@@ -5431,8 +5450,7 @@ form select + .select2-container {
     right: 24%; }
   .gal-sl .slick-slide.slick-center .gal-sl__slide::before {
     width: 100%;
-    height: 100%;
-    opacity: 1; }
+    height: 100%; }
   .s-sform__bg {
     margin-top: 0; }
   .gal-sl .slick-track {
@@ -5603,7 +5621,19 @@ form select + .select2-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px; }
   .s-doctors-form .s-sform__bg {
-    margin-top: 80px; } }
+    margin-top: 80px; }
+  .eye {
+    display: none; }
+  .burger-w {
+    margin-left: 7px; }
+  .mn__ul ul li.has-child i.mnu-arrow {
+    height: 100%; }
+  .mn__ul ul {
+    padding-right: 0; }
+    .mn__ul ul li {
+      width: 100%; }
+  .top-saerch {
+    display: none; } }
 
 @media (max-width: 991px) {
   .vid__w {
@@ -6025,7 +6055,6 @@ form select + .select2-container {
     .gal-sl__slide img {
       border-radius: 80px 16px; }
     .gal-sl__slide:before {
-      opacity: 1;
       background-color: transparent;
       background-size: 60px; }
   .gal-sl {
@@ -6108,7 +6137,6 @@ form select + .select2-container {
       position: absolute;
       width: 100%;
       height: 100%;
-      opacity: 1;
       background: rgba(0, 0, 0, 0.3) url("../img/gal-popup-plus.svg") no-repeat center;
       background-size: 60px;
       border-radius: 80px 16px; }
@@ -6127,7 +6155,19 @@ form select + .select2-container {
         left: 0;
         top: 0; }
   .vid {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  .serv__item:before {
+    width: 36px;
+    height: 36px;
+    right: 20px;
+    bottom: 20px;
+    top: auto;
+    -webkit-background-size: 19px;
+    -o-background-size: 19px;
+    background-size: 19px;
+    border-radius: 12px 6px; }
+  .gal-sl__slide:before {
+    background-color: transparent; } }
 
 @media (max-width: 575px) {
   .vid .vid__l {
@@ -6175,7 +6215,13 @@ form select + .select2-container {
     padding: 0 50px;
     min-width: unset; }
   .promo__more {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .news-list__page h1 {
+    margin-bottom: 24px; }
+  .doctors-list {
+    margin-top: -18px; }
+  .doctors-item__bottom {
+    margin-top: 17px; } }
 
 @media (max-width: 375px) {
   .top-line__geo,

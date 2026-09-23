@@ -141,7 +141,7 @@ h2,
   display: none;
   background: rgba(45, 40, 40, 0.5);
   &_4 {
-    display: block;
+
   }
 }
 
@@ -1196,7 +1196,26 @@ input[type="text"] {
     .serv__price {
       color: #121820;
     }
+    &:before {
+      background-color: var(--d9d9d9);
+      background-image: url('../img/arr-servs-wh.svg');
+    }
   }   
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 30px;
+    top: 30px;
+    border-radius: 20px 8px;
+    background: #fff;
+    z-index: 4;
+    background-image: url('../img/arr-servs.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  } 
 }
 
 .serv__item--all {
@@ -5897,7 +5916,7 @@ select + .select2-container {
     overflow: hidden;
     height: 294px;
     -ms-overflow-y: auto;
-        overflow-y: auto;
+    overflow-y: auto;
   }
   .select2-search--dropdown {
     border: none;
