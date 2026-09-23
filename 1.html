@@ -76,7 +76,10 @@
       </section>
       <section class="section s-gal">
         <div class="contain">
-          <h2>Фотографии клиники</h2>
+          <div class="h2__w">
+            <h2>Фотографии клиники</h2>  
+            <a href="" class="all-more">Смотреть все</a>
+          </div>
         </div>
         @@include('var/_gal__wrap.html')
       </section>
@@ -172,15 +175,72 @@
           </div>
         </div>
       </section>
+      <section class="section s-rate">
+        <div class="contain">          
+          <h2>Рейтинги и оценки пациентов</h2>          
+          <div class="rate__row">
+            <div class="rate__item">
+              <img src="./img/rate-img-1.png" alt="" class="rate__img">
+              <div class="rate__info">
+                <div>Cредняя оценка:</div>
+                <span>4.9</span>
+              </div>
+            </div>
+            <div class="rate__item">
+              <img src="./img/rate-img-2.png" alt="" class="rate__img">
+              <div class="rate__info">
+                <div>Cредняя оценка:</div>
+                <span>4.9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
       <section class="section s-reviews">
         <div class="contain">
           <div class="h2__w">              
             <h2>Отзывы пациентов</h2>
-            <a href="" class="all-more all-more--arrows">Все отзывы</a>            
+            <a href="" class="all-more all-more--arrows">Все отзывы</a>
           </div>
         </div>
         @@include('var/_rev-sl__wrap.html')      
       </section>
+
+      <section class="s-articl-doc">
+        <div class="contain">
+          <div class="h2__w">
+            <h2>Новости и полезные статьи</h2>            
+            <a href="" class="all-more">Смотреть все</a>
+
+            <div class="tabs nav-block-list__tabs">
+              <ul class="tabs__list">
+                <li class="tabs__list-item active"><a href="">Все</a></li>
+                <li class="tabs__list-item"><a href="">Новости</a></li>
+                <li class="tabs__list-item"><a href="">Статьи</a></li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="articl-doc__w">
+            @@include('var/_articl-doc__item.html',{
+              "img":"img/articl-doc-1.jpg",
+              "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+              "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+            })
+            @@include('var/_articl-doc__item.html',{
+              "img":"img/articl-doc-1.jpg",
+              "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+              "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+            })
+            @@include('var/_articl-doc__item.html',{
+              "img":"img/articl-doc-1.jpg",
+              "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+              "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+            })
+          </div>
+        </div>
+      </section>
+
       <section class="section s-lic">
         <div class="contain">
           <h2 class="center">Лицензии</h2>

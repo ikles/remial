@@ -16,6 +16,10 @@ jQuery(document).ready(function ($) {
     $('.header__col').toggleClass('open');
   });
 
+  $('.has-child ul.sub-menu').wrap('<div class="child-ul__w"></div>');
+
+  $('.has-child').prepend('<i class="mnu-arrow"></i>');
+
   // Находим все блоки .open-element2
   $('.open-element2').each(function () {
     // Проверяем, есть ли внутри .mabout__txt элемент .hide-content
@@ -90,7 +94,7 @@ jQuery(document).ready(function ($) {
         isMobile.iOS() ||
         isMobile.Opera() ||
         isMobile.Windows()
-        );
+      );
     },
   };
 
@@ -113,6 +117,22 @@ jQuery(document).ready(function ($) {
   } else {
     body.classList.add('mouse');
   }
+
+  $('.has-mega-child').on('mouseenter', function() {
+    $('.mega-child').slideDown();
+    $(this).find('i.mnu-arrow').addClass('rotate180');    
+  });
+
+  $('.has-child:not(.has-mega-child)').on('mouseenter', function() {
+    $('.mega-child').slideUp();
+    $('.mega-child').find('i.mnu-arrow').addClass('rotate180');
+  });
+
+  $('.has-mega-close').click(function () {
+    $('.mega-child').slideUp();
+    $('i.mnu-arrow').removeClass('rotate180');    
+  });
+  
 
   $('.doctors__sl').slick({
     infinite: true,
@@ -370,6 +390,7 @@ jQuery(document).ready(function ($) {
   popup('.js-call', '.modal-overlay_1', '.modal-close_1');
   popup('.js-calldoc', '.modal-overlay_2', '.modal-close_2');
   popup('.js-tel', '.modal-overlay_3', '.modal-close_3');
+  popup('.js-rev', '.modal-overlay_4', '.modal-close_4');
 
   $('.tel').mask('+7 (999) 999-99-99');
 
@@ -657,5 +678,5 @@ document.addEventListener(
       }
     },
     false,
-    );
+  );
 }); //ready
