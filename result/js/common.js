@@ -32,6 +32,63 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  function mobileTable() {
+    $('.responsive-table').each(function () {
+      const $table = $(this);
+
+      if ($(window).width() < 576) {
+
+            // Если уже преобразовали — повторно не делаем
+        if ($table.hasClass('mobile-table')) {
+          return;
+        }
+
+        const $mobile = $('<div class="mobile-table"></div>');
+
+            // Заголовки столбцов
+        $table.find('thead td').each(function (columnIndex) {
+
+          const $column = $('<div class="mobile-table__column"></div>');
+
+                // Заголовок
+          $('<div class="mobile-table__title"></div>')
+          .text($(this).text())
+          .appendTo($column);
+
+                // Ячейки этого столбца
+          $table.find('tbody tr').each(function () {
+            $('<div class="mobile-table__item"></div>')
+            .text($(this).find('td').eq(columnIndex).text())
+            .appendTo($column);
+          });
+
+          $mobile.append($column);
+        });
+
+        $table
+        .addClass('mobile-table-original')
+        .after($mobile);
+      } 
+      else {
+            // Возвращаем обычную таблицу
+        $table.removeClass('mobile-table');
+        $table.next('.mobile-table').remove();
+      }
+    });
+  }
+
+  $(document).ready(function () {
+    mobileTable();
+
+    $(window).on('resize', function () {
+      mobileTable();
+    });
+  });
+
+
+
+
   if ($(window).width() >= 1200) {
     $(window).on('scroll', function () {
       var scrollTop = $(this).scrollTop();

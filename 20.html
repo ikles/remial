@@ -42,9 +42,11 @@
                 и где проходит граница между заботой и попыткой контролировать чужую жизнь.</div>
                 <div class="fam__img"><img src="./img/fam.jpg"></div>
               </div>
-              <div class="author__w">
-                <div class="author__ava"><img src="./img/doctor.png"></div>
+              <div class="author__w author__w--2">
+                <div class="author__ava" data-da=",.author__ava-w,991,0"><img src="./img/doctor.png"></div>
                 <div class="author__inf">
+                  <div class="author__ava-w"></div>
+                  <div class="author__art-wrap">
                   <div class="author__art-w">
                     <div class="author__art">Автор статьи:</div>
                   </div>
@@ -52,14 +54,17 @@
                     <div class="author__name">Киселев Тимофей Викторович</div>
                     <p class="author__txt">Гипнолог, телесно-ориентированный и трансперсональный психотерапевт, танатотехник, НЛП мастер и НЛП тренер.</p>
                   </div>
+                  </div>
                 </div>
-                <div class="author__pubs">
-                  <div class="author__publish">Опублиновано:</div>
-                  <div class="author__date">10 августа 2026</div>
-                </div>
-                <div class="author__pubs">
-                  <div class="author__publish">Изменено::</div>
-                  <div class="author__date">10 августа 2026</div>
+                <div class="author__pubs-w">
+                  <div class="author__pubs">
+                    <div class="author__publish">Опублиновано:</div>
+                    <div class="author__date">10 августа 2026</div>
+                  </div>
+                  <div class="author__pubs">
+                    <div class="author__publish">Изменено::</div>
+                    <div class="author__date">10 августа 2026</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,7 +83,24 @@
                     <li><span><img src="img/methods-1.svg"></span> Лицензированная клиника</li>
                   </ul>
                 </div>
-                @@include('var/_how-contacts.html')  
+
+                <div class="how-contacts" data-da=",.col-r,1199,1">
+                  <div class="how-contacts__title">Вам или вашему близкому плохо?
+                  Мы приедем в течение 30 минут </div>
+                  <div class="how-contacts__subtitle">
+                    По Москве и области
+                  </div>
+                  <div class="how-contacts__info">
+                    <p>Круглосуточно. Анонимно
+                    </p>
+                    <a href="tel:" class="how-contacts__info-tel">8 (495) 540-57-86</a>
+                  </div>
+                  <form>
+                    <input class="tel" type="text" placeholder="+7(___)___-__-__">
+                    <input type="submit" value="Вызвать нарколога">
+                  </form>
+                </div>
+
               </div><!--col-l-->
               <div class="col-r">
                 <div class="art-cont">
@@ -217,7 +239,7 @@
                   <p>После начала лечения родственники нередко бросаются в другую крайность — пытаются полностью взять ситуацию под свой контроль. Напоминают о каждом приеме лекарства, проверяют самочувствие по несколько раз в день, следят за каждым шагом. Желание помочь понятно, но чрезмерный контроль редко идет на пользу. Человеку важно чувствовать поддержку, а не постоянное наблюдение.</p>
                   <p>Как помочь близкому с психическим расстройством, если лечение уже началось? Самое полезное — помогать там, где это действительно необходимо, не пытаясь заменить врача или принимать решения за самого человека.</p>
 
-                  <table>
+                  <table class="responsive-table">
                     <thead>
                       <tr>
                         <td>Столбик 1</td>
@@ -315,52 +337,55 @@
             </div>
           </div>
         </section>
-              </div><!--news-list__page-->
-        <section class="section s-doctors">
-          <div class="contain">
-            <div class="h2__w">            
-              <h2>Врачи</h2>
-              <a href="" class="all-more all-more--arrows">Все врачи</a>
-            </div>
-            @@include('var/_doctors__sl.html')
+      </div><!--news-list__page-->
+      <section class="section s-doctors">
+        <div class="contain">
+          <div class="h2__w">            
+            <h2>Врачи</h2>
+            <a href="" class="all-more all-more--arrows">Все врачи</a>
           </div>
-        </section>
-        <section class="section s-see-also">
-          <div class="contain">
-            <div class="h2">Услуги по теме</div>
-            <div class="see-also__w">
-              <a href="">Анонимное лечение алкоголизма</a>
-              <a href="">Кодирование алкоголизма</a>
-              <a href="">Капельница от запоя на дому</a>
-              <a href="">Капельница от похмелья</a>
-              <a href="">Анонимное лечение алкоголизма</a>
-              <a href="">Кодирование алкоголизма</a>
-              <a href="">Капельница от запоя на дому</a>
-              <a href="">Капельница от похмелья</a>
-            </div>
-            <a href="" class="show-more">Показать все</a>
+          @@include('var/_doctors__sl.html')
+        </div>
+      </section>
+      <section class="section s-see-also">
+        <div class="contain">
+          <div class="h2">Услуги по теме</div>
+          <div class="see-also__w">
+            <a href="">Анонимное лечение алкоголизма</a>
+            <a href="">Кодирование алкоголизма</a>
+            <a href="">Капельница от запоя на дому</a>
+            <a href="">Капельница от похмелья</a>
+            <a href="">Анонимное лечение алкоголизма</a>
+            <a href="">Кодирование алкоголизма</a>
+            <a href="">Капельница от запоя на дому</a>
+            <a href="">Капельница от похмелья</a>
           </div>
-        </section>
-        <section class="section servi-pric">
-          <div class="contain">
-            <div class="h2__w">
-              <h2>Цены на услуги</h2>
-              <a href="" class="all-more">Смотреть все цены</a>
-            </div>
-            @@include('var/_servi-pric__w.html')
-            <div class="attention">
-              <div class="attention__txt">Цены, указанные на сайте, не являются публичной офертой. Точная стоимость лечения определяется после консультации с
-              врачом</div>
-            </div>
+          <a href="" class="show-more">Показать все</a>
+        </div>
+      </section>
+      <section class="section servi-pric">
+        <div class="contain">
+          <div class="h2__w">
+            <h2>Цены на услуги</h2>
+            <a href="" class="all-more">Смотреть все цены</a>
           </div>
-        </section>
-        <section class="s-articl-doc">
-          <div class="contain">
-            <div class="h2__w">
-              <h2>Полезные материалы</h2>
-              <a href="" class="all-more">Все статьи по теме</a>
-            </div>
-            <div class="articl-doc__w">
+          @@include('var/_servi-pric__w.html')
+          <div class="attention">
+            <div class="attention__txt">Цены, указанные на сайте, не являются публичной офертой. Точная стоимость лечения определяется после консультации с
+            врачом</div>
+          </div>
+        </div>
+      </section>
+      <section class="section s-articl-doc">
+        <div class="contain">
+          <div class="h2__w">
+            <h2>Полезные материалы</h2>
+            <a href="" class="all-more">Все статьи по теме</a>
+          </div>
+        </div>
+        <div class="cpadding">
+          <div class="articl-doc__w">
+            <div class="articl-doc__scroll">
               @@include('var/_articl-doc__item.html',{
                 "img":"img/articl-doc-1.jpg",
                 "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
@@ -378,13 +403,14 @@
               })
             </div>
           </div>
-        </section> 
+        </div>
+      </section> 
 
-        <section class="section s-sform">
-          <div class="contain">
-            @@include('var/_s-sform__bg--l.html')        
-          </div>
-        </section>
+      <section class="section s-sform">
+        <div class="contain">
+          @@include('var/_s-sform__bg--l.html')        
+        </div>
+      </section>
 
       @@include('var/_s-smap.html')
 
