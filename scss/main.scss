@@ -3599,6 +3599,8 @@ img {
     @media (max-width : 640px) {      
       flex-wrap: nowrap;
       overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
     }  
     li {      
       font-weight: 400;
@@ -3948,7 +3950,7 @@ img {
 
 
 .s-articl-doc {
-  
+
 }
 
 .articl-doc__w {
@@ -5022,7 +5024,8 @@ ul.docs__list {
 
 .get__w {
   display: flex;
-  gap: 30px;
+  gap: 30px;  
+          align-items: flex-start;
 }
 
 .get__l {
@@ -5072,9 +5075,11 @@ ul.docs__list {
 
 
 .get__r {
-  width: 40%;
+  width: 670px;
   flex: 0 0 auto;
 }
+
+
 
 .get-img__sl {
   border-radius: 160px 24px 120px;
@@ -5083,7 +5088,6 @@ ul.docs__list {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 438px;
   width: 100%;
   flex: 0 0 auto;
 
@@ -5125,6 +5129,10 @@ ul.docs__list {
       color: rgb(0, 0, 0);      
     }
   }
+}
+
+.get-sl {
+  height: 438px;
 }
 
 .price-page__block {

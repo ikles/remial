@@ -277,6 +277,22 @@
   .promo__list {    
     grid-template-columns: repeat(2, 1fr);    
   }
+  .contacts__card {
+    max-width: 480px;
+    width: 100%;
+  }
+  .tabs__list-item {
+    white-space: nowrap;
+  }
+  .s-sform__img-3 {
+    display: none;
+  }
+  .s-sform__grid {
+    padding-bottom: 87px;
+  }
+  .s-sform__bg-3 {
+    min-height: unset;
+  }
 }//1365
 
 @media (min-width: 1200px) and (max-width: 1365px) {
@@ -830,6 +846,13 @@
 .content td, .accordion-content td {
   font-size: 16px;
 }
+.vid__prices {  
+  flex-direction: column;          
+  align-items: flex-start;
+}
+.get__w {  
+          flex-direction: column;
+}
 }//1199
 
 @media (max-width : 991px) {
@@ -1160,10 +1183,16 @@
     width: auto;
   }
 }
-  .promo__list {
-    display: flex;    
-            flex-direction: column;
-  }
+.promo__list {
+  display: flex;    
+  flex-direction: column;
+}
+.promo-ful__info {
+  font-size: 20px;
+}
+.vid__r {
+  flex: unset;
+}
 }//991
 
 @media (max-width : 767px) {
@@ -1958,24 +1987,24 @@ h2, .h2 {
 }
 .author__art {
   width: 100%;  
-          flex: none;
+  flex: none;
 }
 .author__w {  
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .author__inf {
   margin-left: 0;  
-          flex-direction: row;
-          gap: 15px;
+  flex-direction: row;
+  gap: 15px;
 }
 .author__art {
   margin-bottom: 15px;
   text-align: left;
 } 
 .author__pubs {  
-          flex-direction: row;
-          gap: 10px;
-          margin-top: 20px;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
 }
 }//640
 
@@ -2076,14 +2105,14 @@ h2, .h2 {
   }
   .anchors {
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     ul {
       gap: 70px;
     }
   }
   .s-anchors .cpadding .anchors {
-    
+
   }
   .when__item--last {
     font-size: 16px;
@@ -2096,7 +2125,7 @@ h2, .h2 {
     padding: 30px;
   }
   .attention__txt {    
-            align-items: flex-start;
+    align-items: flex-start;
   }
   .servi-pric__w {
     .all-more {
@@ -2105,13 +2134,19 @@ h2, .h2 {
       width: 235px;
       margin-left: auto;
       margin-right: auto;      
-              justify-content: center;
-              margin-top: 24px;
+      justify-content: center;
+      margin-top: 24px;
     }
+  }
+  .about-vid__desc p {
+    font-size: 16px;
   }
 }//575
 
 @media (max-width : 480px) {
+  .about-vid__desc p {
+    font-size: 14px;
+  }
   .s-articl-doc {
     .h2__w {
       h2 {
@@ -2135,12 +2170,12 @@ h2, .h2 {
   width: 630px;
 }
 .advants__w-2 {
-  
+
 }
 .advants__w-2 .advants__item {  
-          flex-direction: column;
-          -webkit-align-items: flex-start;
-                  align-items: flex-start;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
 }
 .attention._lg .attention__txt {
   font-size: 14px;
@@ -2156,6 +2191,9 @@ h2, .h2 {
 }
 .news-list__page, .s-reviews-page {
   padding-bottom: 65px;
+}
+.promo-ful__info {
+  font-size: 16px;
 }
 }//480
 
