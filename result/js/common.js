@@ -175,9 +175,11 @@ jQuery(document).ready(function ($) {
     body.classList.add('mouse');
   }
 
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+
   $('.has-mega-child').on('mouseenter', function() {
     $('.mega-child').slideDown();
-    $(this).find('i.mnu-arrow').addClass('rotate180');    
+    $(this).find('i.mnu-arrow').addClass('rotate180');
   });
 
   $('.has-child:not(.has-mega-child)').on('mouseenter', function() {
@@ -185,10 +187,22 @@ jQuery(document).ready(function ($) {
     $('.mega-child').find('i.mnu-arrow').addClass('rotate180');
   });
 
-  $('.has-mega-close').click(function () {
-    $('.mega-child').slideUp();
-    $('i.mnu-arrow').removeClass('rotate180');    
+}
+
+$('.has-mega-close').click(function () {
+  $('.mega-child').slideUp();
+  $('i.mnu-arrow').removeClass('rotate180');
+});
+
+  $('.has-child i').click(function () {
+    $(this).parent().find('.child-ul__w').slideToggle();
+    $(this).toggleClass('rotate180');
   });
+
+
+  if( $(window).width() < 1200 ) {
+
+  }
   
 
   $('.doctors__sl').slick({
