@@ -4293,6 +4293,9 @@ ul.docs__list {
   left: 0;
   width: 100%; }
 
+.contacts__map {
+  height: 100%; }
+
 .contacts__card {
   border-radius: 24px 24px 120px;
   background: white;
@@ -4422,9 +4425,9 @@ ul.docs__list {
     color: #121820;
     opacity: 0.88;
     display: flex;
-    align-items: center;
     margin-bottom: 30px;
-    counter-increment: step-counter; }
+    counter-increment: step-counter;
+    align-items: flex-start; }
     .get__ul-w ul li:before {
       content: "";
       background: var(--main-blue);
@@ -5755,11 +5758,60 @@ form select + .select2-container {
   .content tbody td, .accordion-content tbody td,
   .content td, .accordion-content td {
     font-size: 16px; }
-  .vid__prices {
+  .vid__prices--2 {
     flex-direction: column;
     align-items: flex-start; }
   .get__w {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .s-sform__row {
+    flex-direction: column-reverse; }
+  .s-sform__row-2 form,
+  .s-sform__row-2 {
+    flex-direction: column; }
+  .s-sform__row-2 button, .s-sform__row-2 input[type="submit"],
+  .s-sform__row-2 input[type="text"],
+  .s-sform__row-2 form {
+    width: 100%; }
+  .s-sform__bg-3 {
+    padding: 32px 25px 52px 25px;
+    border-radius: 16px 16px 80px 16px; }
+  .s-sform__grid {
+    padding-bottom: 0;
+    margin-right: 0; }
+  .sform-row__info {
+    margin-top: 13px;
+    text-align: left;
+    width: 100%; }
+  .sform__info-2,
+  .s-sform__title-2,
+  .sform-row__txt {
+    text-align: center; }
+  .sform__info-2 {
+    background: none;
+    color: #FFF; }
+  .sform__info-2 span,
+  .sform__info-2 .sform__info-tel {
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    display: block; }
+  .sform__info-2 {
+    height: auto;
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background: none;
+    justify-content: center; }
+  .sform__info-2:before {
+    display: none; }
+  .s-sform__row-2 form {
+    gap: 10px; }
+  .s-sform__row,
+  .s-sform__grid {
+    gap: 27px; }
+  .s-sform__title-2 {
+    margin-bottom: 18px; } }
 
 @media (max-width: 991px) {
   .vid__w {
@@ -5989,7 +6041,33 @@ form select + .select2-container {
   .promo-ful__info {
     font-size: 20px; }
   .vid__r {
-    flex: unset; } }
+    flex: unset; }
+  .get__tabs .h2__w {
+    flex-wrap: wrap; }
+  .get-tabs__list {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px; }
+    .get-tabs__list .tabs__list-item {
+      width: calc(50% - 10px); }
+  .contacts__w {
+    position: static; }
+  .contacts {
+    height: auto; }
+  .contacts__map {
+    height: 437px; }
+  .contacts__card {
+    padding: 0; }
+  .contacts {
+    display: flex;
+    flex-direction: column-reverse; }
+  .contacts__w {
+    padding-top: 0;
+    padding-bottom: 36px; }
+  .get__r {
+    width: 100%; }
+  .get-img__sl .slick-arrow {
+    display: block !important; } }
 
 @media (max-width: 767px) {
   .vid .vid__l {
@@ -6684,7 +6762,68 @@ form select + .select2-container {
     justify-content: center;
     margin-top: 24px; }
   .about-vid__desc p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .s-sform__title-2 {
+    font-size: 24px; }
+  .sform-row__txt {
+    font-size: 14px; }
+  .sform__info-2 span {
+    font-size: 12px; }
+  .sform__info-2 .sform__info-tel {
+    font-size: 20px; }
+  .s-sform__row-2 button, .s-sform__row-2 input[type="submit"], .s-sform__row-2 input[type="text"] {
+    height: 49px;
+    border-radius: 16px;
+    font-size: 12px; }
+  .sform-row__info {
+    font-size: 12px;
+    padding-left: 0; }
+  .s-org-det ul li {
+    font-size: 14px; }
+  .news-list__page, .s-reviews-page {
+    padding-bottom: 64px; }
+  .get-sl {
+    border-radius: 80px 16px;
+    width: 360px;
+    height: 466px;
+    overflow: hidden;
+    position: relative; }
+    .get-sl:before {
+      z-index: 2;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(../img/gal-popup-plus.svg) no-repeat center;
+      background-size: 60px;
+      border-radius: 80px 16px; }
+  .get-img__sl {
+    width: 730px;
+    margin-left: -5px;
+    margin-right: -5px; }
+    .get-img__sl .slick-slide {
+      padding: 0 5px; }
+  .get-img__sl {
+    -webkit-border-radius: 0;
+    border-radius: 0; }
+  .get-tabs__list .tabs__list-item {
+    padding: 4px 10px;
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 12px; }
+  .get__l .btn-o {
+    width: 100%; }
+  .get__ul-w ul li {
+    font-size: 14px;
+    margin-bottom: 15px; }
+  .contacts__card .contacts__title {
+    display: none; }
+  .contacts__txt {
+    font-size: 12px; }
+  .call-taxi {
+    width: 100%;
+    justify-content: center; } }
 
 @media (max-width: 480px) {
   .about-vid__desc p {

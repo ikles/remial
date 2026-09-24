@@ -248,7 +248,16 @@ jQuery(document).ready(function ($) {
     autoplaySpeed: 4000,
     cssEase: 'ease-out',
     dots: false,    
-    arrows: true,        
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,                
+          arrows: false,
+        },
+      },
+    ],        
   });
 
   $('[data-fancybox="gal-list"]').fancybox({
