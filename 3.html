@@ -60,7 +60,7 @@
           </div>
         </section> 
         <section class="s-about">
-          <div class="contain">
+          <div class="cpadding">
             <div class="about__w">
               <div class="col__l">
                 <div class="about__l">
@@ -192,28 +192,32 @@
           </div>
           @@include('var/_rev-sl__wrap.html')      
         </section>
-        <section class="s-articl-doc">
+        <section class="section s-articl-doc">
           <div class="contain">
             <div class="h2__w">
               <h2>Статьи, проверенные врачом</h2>
               <a href="" class="all-more">Смотреть все</a>
             </div>
+          </div>
+          <div class="cpadding">
             <div class="articl-doc__w">
-              @@include('var/_articl-doc__item.html',{
-                "img":"img/articl-doc-1.jpg",
-                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
-                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
-              })
-              @@include('var/_articl-doc__item.html',{
-                "img":"img/articl-doc-1.jpg",
-                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
-                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
-              })
-              @@include('var/_articl-doc__item.html',{
-                "img":"img/articl-doc-1.jpg",
-                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
-                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
-              })
+              <div class="articl-doc__scroll">
+                @@include('var/_articl-doc__item.html',{
+                  "img":"img/articl-doc-1.jpg",
+                  "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                  "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+                })
+                @@include('var/_articl-doc__item.html',{
+                  "img":"img/articl-doc-1.jpg",
+                  "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                  "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+                })
+                @@include('var/_articl-doc__item.html',{
+                  "img":"img/articl-doc-1.jpg",
+                  "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                  "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+                })
+              </div>
             </div>
           </div>
         </section> 

@@ -224,12 +224,9 @@ jQuery(document).ready(function ($) {
     arrows: true,    
     responsive: [
       {
-        breakpoint: 641,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          centerMode: false,
-          arrows: false,
-          swipe: true,
+          slidesToShow: 2,          
         },
       },
     ],
