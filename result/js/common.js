@@ -200,6 +200,12 @@ jQuery(document).ready(function ($) {
     draggable: false,
     responsive: [
       {
+        breakpoint: 992,
+        settings: {
+          swipe: true,
+        }
+      },
+      {
         breakpoint: 641,
         settings: {
           slidesToShow: 2,

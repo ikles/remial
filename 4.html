@@ -69,7 +69,7 @@
       @@include('var/_s-advants2.html')
 
       <section class="s-anchors">
-        <div class="contain">
+        <div class="cpadding">
           <div class="anchors">
             <ul>
               <li><a href="" class="act">Цены</a></li>
@@ -328,10 +328,10 @@
         <div class="contain">
 
           <div class="author__w">
-            <div class="author__ava"><img src="img/doctor.png"></div>
+            <div class="author__ava" data-da=".author__w,.author__inf,640,0"><img src="img/doctor.png"></div>
             <div class="author__inf">
               <div class="author__art-w">
-                <div class="author__art">Автор статьи:</div>
+                <div class="author__art" data-da=",.author__w,640,0">Автор статьи:</div>
               </div>
               <div class="author__txt-w">
                 <div class="author__name">Киселев Тимофей Викторович</div>
@@ -350,7 +350,7 @@
         <div class="contain">
           <div class="h2__w">
             <h2>Цены на услуги</h2>
-            <a href="" class="all-more">Смотреть все цены</a>
+            <a href="" class="all-more" data-da=",.servi-pric__w,575,100">Смотреть все цены</a>
           </div>
           @@include('var/_servi-pric__w.html')
           <div class="attention">
@@ -483,28 +483,32 @@
         </div>
       </section>
 
-      <section class="s-articl-doc">
+      <section class="section s-articl-doc">
         <div class="contain">
           <div class="h2__w">
             <h2>Полезные материалы</h2>
             <a href="" class="all-more">Все статьи по теме</a>
           </div>
+        </div>
+        <div class="cpadding">
           <div class="articl-doc__w">
-            @@include('var/_articl-doc__item.html',{
-              "img":"img/articl-doc-1.jpg",
-              "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
-              "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
-            })
-            @@include('var/_articl-doc__item.html',{
-              "img":"img/articl-doc-1.jpg",
-              "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
-              "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
-            })
-            @@include('var/_articl-doc__item.html',{
-              "img":"img/articl-doc-1.jpg",
-              "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
-              "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
-            })
+            <div class="articl-doc__scroll">
+              @@include('var/_articl-doc__item.html',{
+                "img":"img/articl-doc-1.jpg",
+                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+              })
+              @@include('var/_articl-doc__item.html',{
+                "img":"img/articl-doc-1.jpg",
+                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+              })
+              @@include('var/_articl-doc__item.html',{
+                "img":"img/articl-doc-1.jpg",
+                "title":"Панические атаки при наркомании: причины, симптомы и опасные последствия",
+                "txt":"Мы ценим наших клиентов и рады предложить специальную скидку 15% на повторный вызов нарколога на дом!&nbsp;"
+              })
+            </div>
           </div>
         </div>
       </section> 
