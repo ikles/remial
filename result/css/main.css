@@ -933,7 +933,9 @@ input[type="text"]:focus {
   height: calc(100% - 50px);
   -ms-overflow-y: auto;
   overflow-y: auto;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  opacity: 0;
+  visibility: hidden; }
   .sub-3-menu-wrap::-webkit-scrollbar {
     width: 6px;
     /* ширина scrollbar */ }

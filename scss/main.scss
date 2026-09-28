@@ -711,7 +711,9 @@ input[type="text"] {
   height: calc(100% - 50px);
   -ms-overflow-y: auto;
   overflow-y: auto; 
-  margin-bottom: 50px;   
+  margin-bottom: 50px;
+  opacity: 0;
+  visibility: hidden;  
   &::-webkit-scrollbar {
     width: 6px;               /* ширина scrollbar */
   }
