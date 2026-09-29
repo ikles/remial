@@ -4297,7 +4297,8 @@ ul.docs__list {
 
 .contacts {
   height: 680px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .contacts__w {
   padding-top: 75px;
