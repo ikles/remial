@@ -127,6 +127,39 @@ jQuery(document).ready(function ($) {
     });
   } //1200
 
+
+  jQuery(window).scroll(function() {
+    let wrap1 = $('.s-about .about__w');
+    let elem1 = $('.about__l');
+
+  // Проверяем, существуют ли оба элемента
+    if (wrap1.length && elem1.length) {
+      var scroll_sticky1 = wrap1.offset().top;
+      if ($(this).scrollTop() > scroll_sticky1) {
+        elem1.addClass("fixed");
+      } else {
+        elem1.removeClass("fixed");
+      }
+    }
+  });
+
+  jQuery(window).scroll(function() {
+    let wrap2 = $('.s-article-contnet .row');
+    let elem2 = $('.methods__advs-w');
+
+  // Проверяем, существуют ли оба элемента
+    if (wrap2.length && elem2.length) {
+      var scroll_sticky2 = wrap2.offset().top;
+      if ($(this).scrollTop() > scroll_sticky2) {
+        elem2.addClass("fixed");
+      } else {
+        elem2.removeClass("fixed");
+      }
+    }
+  });
+
+  
+
   //levels menu
   let isMobile = {
     Android: function () {
@@ -177,22 +210,25 @@ jQuery(document).ready(function ($) {
 
   if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
 
-  $('.has-mega-child').on('mouseenter', function() {
-    $('.mega-child').slideDown();
-    $(this).find('i.mnu-arrow').addClass('rotate180');
-  });
+    $('.has-mega-child').on('mouseenter', function() {
+      $('body').addClass('body-open');
+      $('.mega-child').slideDown();
+      $(this).find('i.mnu-arrow').addClass('rotate180');
+    });
 
-  $('.has-child:not(.has-mega-child)').on('mouseenter', function() {
+    $('.has-child:not(.has-mega-child)').on('mouseenter', function() {
+      $('.mega-child').slideUp();
+      $('body').removeClass('body-open');
+      $('.mega-child').find('i.mnu-arrow').addClass('rotate180');
+    });
+
+  }
+
+  $('.has-mega-close').click(function () {
     $('.mega-child').slideUp();
-    $('.mega-child').find('i.mnu-arrow').addClass('rotate180');
+    $('body').removeClass('body-open');
+    $('i.mnu-arrow').removeClass('rotate180');
   });
-
-}
-
-$('.has-mega-close').click(function () {
-  $('.mega-child').slideUp();
-  $('i.mnu-arrow').removeClass('rotate180');
-});
 
   $('.has-child i').click(function () {
     $(this).parent().find('.child-ul__w').slideToggle();
@@ -203,7 +239,7 @@ $('.has-mega-close').click(function () {
   if( $(window).width() < 1200 ) {
 
   }
-  
+
 
   $('.doctors__sl').slick({
     infinite: true,

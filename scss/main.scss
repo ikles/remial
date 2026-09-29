@@ -67,6 +67,19 @@ body {
   &.ohi {
     overflow: hidden;
   }
+  &.body-open {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#000,0.5);
+      z-index: 6;
+    }  
+  }
 }
 
 input[type="submit"],
@@ -85,10 +98,19 @@ button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;  
-  overflow: hidden;
+  /*overflow: hidden;*/
   display: flex;    
   flex-direction: column;    
   min-height: 100vh; 
+}
+
+.vid,
+.s-news,
+.s-promo,
+.s-doctors,
+.s-gal,
+.s-reviews {
+  overflow: hidden;
 }
 
 .show-575,
@@ -359,14 +381,20 @@ input[type="text"] {
   width: 100%;
 }
 
-.header {}
+.header {
+  z-index: 7;
+}
+
+.header__col {
+  background-color: #FFF;  
+}
 
 .top {
   padding: 30px 0;
   width: 100%;    
   transition: 0.5s;
   background-color: #FFF;    
-  z-index: 4;
+  z-index: 5;
   transform: translateY(0);
   border-bottom: 1px solid rgb(246, 246, 246);  
   &.slide {    
@@ -397,7 +425,6 @@ input[type="text"] {
 .body-open {
   .top.fixed {
     border-radius: 0;
-
   }
 }
 
@@ -524,7 +551,7 @@ input[type="text"] {
 }
 
 .top__mnu {  
-  padding-top: 25px;
+  padding: 25px 0;
 }
 
 .mn__ul {
@@ -643,7 +670,7 @@ input[type="text"] {
   border-radius: 0px 0px 36px 36px;  
   padding-bottom: 50px;
   padding-top: 50px;
-  margin-top: 25px;
+  margin-top: -1px;
   display: none;
 }
 .mega-child__inn {
@@ -849,15 +876,28 @@ input[type="text"] {
   align-items: center;
   gap: 29px;  
   margin-top: 46px;
-  max-width: calc(100% - 120px);
   @media (max-width : 640px) {  
     gap: 10px;
     margin-top: 20px;
   }
-
   .promo-item__date {
     margin-bottom: 0;
   }
+  + .vid__btn-w{
+    margin-top: 30px;
+  } 
+}
+
+.vid__prices,
+.vid__btn-w {
+  max-width: calc(100% - 120px);  
+}
+
+.vid__btn-w {
+  .btn,
+  .btn-o {
+   width: calc(50% - 10px); 
+ }
 }
 
 .vid-go,
@@ -963,7 +1003,8 @@ input[type="text"] {
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
-    margin-right: 16px;
+    margin-right: 16px;    
+    flex: none;
   }  
 }
 
@@ -3650,6 +3691,7 @@ img {
 .about__w {
   display: flex;
   gap: 110px;
+  position: relative;
 }
 
 .col__l {
@@ -3657,10 +3699,30 @@ img {
   flex: 0 0 auto;
 }
 
+.col__l--doc {
+  padding-top: 1px;  
+  transition: padding 0.33s;
+  &.pt100 {
+    padding-top: 96px;
+  }
+}
+
 .about__l {
   border: 1px solid rgb(232, 237, 246);
   border-radius: 24px;
-  padding: 50px 48px;
+  padding: 50px 48px;  
+  background-color: #FFF; 
+  transform: translateY(0px);   
+  transition: 0.33s;
+  &.fixed {    
+    position: sticky;
+    top: 0;
+    transform: translateY(130px);
+    @media (max-width : 1365px) {
+      position: static;
+      transform: translateY(0px);   
+    }
+  }
   ul {
     display: flex;
     gap: 20px;
@@ -4046,7 +4108,7 @@ img {
 .text-page {  
   padding-bottom: 140px;
   > p {
-  font-size: 20px;    
+    font-size: 20px;    
     font-weight: 400;
     line-height: 2.01;
     color: #000;
@@ -4113,9 +4175,9 @@ ul.docs__list {
   h1 {
     font-weight: 700;
     @media (min-width : 641px) {
-    margin-bottom: 46px;
-    font-size: 50px;
-    line-height: 1.2;          
+      margin-bottom: 46px;
+      font-size: 50px;
+      line-height: 1.2;          
     }
   }
 }
@@ -4317,11 +4379,13 @@ ul.docs__list {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 40px;
   ul {
     display: flex;
     gap: 164px;
     li {
       a {
+        white-space: nowrap;
         display: inline-flex;
         padding-top: 29px;
         padding-bottom: 29px;
@@ -4607,7 +4671,7 @@ ul.docs__list {
   padding-left: 64px;
   width: 50%;  
   display: flex;  
-          align-items: center;
+  align-items: center;
 }
 
 .plus-minus__row {
@@ -5425,6 +5489,11 @@ ul.spagin {
   align-items: center;
   gap: 11px;
   margin-top: 50px;
+  line-height: 1;
+  * {
+    line-height: 1;
+    font-size: 0;
+  }
   li {
     a {
       display: inline-flex;      
@@ -5438,7 +5507,7 @@ ul.spagin {
       font-weight: 400;
       font-size: 18px;
       line-height: 1;
-      color: var(--black);
+      color: $black;
       &.active {
         background: var(--main-blue);
         color: #FFF;
@@ -5715,10 +5784,24 @@ ul.spagin {
 }
 
 
+.methods__advs-w {
+  gap: 30px;
+  display: flex;  
+  flex-direction: column;
+  transform: translateY(0px);  
+  transition: 0.333s;
+  &.fixed {    
+    position: sticky;
+    top: 0;
+    transform: translateY(130px);
+  }  
+}
+
 .methods__advs {
   border: 1px solid rgb(232, 237, 246);
   border-radius: 24px;
   padding: 30px;
+  background-color: #FFF;
   ul {
     display: flex;
     flex-direction: column;
